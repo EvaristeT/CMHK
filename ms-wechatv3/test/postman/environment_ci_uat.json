@@ -1,0 +1,59 @@
+{
+	"id": "a5b04e44-5a29-4b06-aab9-220e1d932cc9",
+	"name": "ZT-Payment - UAT",
+	"values": [
+		{
+			"key": "web_url",
+			"value": "https://pay.hk.chinamobile.com/frontend/index.html?1=1&orderNo=8861484321091416182357&price=1.00&merchantCode=cmhkeshop&merchantKey=APC!cTJ2p%40Lw9%40RJ&nonceStr=1619494124595&lang=zh_hk&msisdn=92049252&customCSS=https%3A%2F%2Fpay.hk.chinamobile.com%2Ffrontend%2Fcss%2Fcustom.css&failUrl=http%3A%2F%2F10.0.28.120%2Ftc%2Fhandsets%2Fhandsets-paystate.html%3Fs%3Df&successUrl=http%3A%2F%2F10.0.28.120%2Ftc%2Fhandsets%2Fhandsets-paystate.html%3Fs%3Ds%26trade_no%3DHE12241645&sign=2b094e89fe00ba66724bf06e0875898e",
+			"enabled": true
+		},
+		{
+			"key": "url.api.payment",
+			"value": "https://172.16.0.69/payment",
+			"enabled": true
+		},
+		{
+			"key": "url.api.wechatv3",
+			"value": "https://172.16.0.69/api/wechatv3",
+			"enabled": true
+		},
+		{
+			"key": "wechat.mchid",
+			"value": "125278178",
+			"enabled": true
+		},
+		{
+			"key": "wechat.appid",
+			"value": "wx44c623f3b058be5a",
+			"enabled": true
+		},
+		{
+			"key": "merchantMethodID",
+			"value": "b3137e1f-a016-4b11-b428-96c5503a3ecf",
+			"enabled": true
+		},
+		{
+			"key": "url.api.fps",
+			"value": "https://172.16.0.69/api/fps",
+			"enabled": true
+		},
+		{
+			"key": "merchantCode",
+			"value": "cmhk.crm",
+			"enabled": true
+		},
+		{
+			"key": "merchantKey",
+			"value": "hffCd65hPumWN6cj",
+			"enabled": true
+		},
+		{
+			"key": "url.api.report",
+			"value": "https://172.16.0.69/api/order",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-10-27T09:09:22.607Z",
+	"_postman_exported_using": "Postman/9.1.1"
+}

@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "0633a58b-315e-422b-a64e-774542805a7c",
+		"name": "ZT-Payment - MS WeChat Pay V3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transaction",
+			"item": [
+				{
+					"name": "native",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var schema = {",
+									"    \"type\": \"object\",",
+									"    \"properties\":{",
+									"        \"uuid\": {\"type\": \"string\"},",
+									"        \"returnCode\": {\"type\": \"string\"},",
+									"        \"resources\": {",
+									"            \"type\": \"object\",",
+									"            \"properties\": {",
+									"                \"code_url\": {\"type\": \"string\"}",
+									"            },",
+									"            \"required\": [\"code_url\"]",
+									"        }",
+									"    },",
+									"    \"required\": [\"uuid\", \"returnCode\", \"resources\"]",
+									"};",
+									"",
+									"pm.test('JSON Schema is valid', function () {",
+									"    pm.response.to.have.jsonSchema(schema);",
+									"});",
+									"",
+									"",
+									"let template = `",
+									"    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>",
+									"    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js\"></script>",
+									"",
+									"    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">",
+									"<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>",
+									"",
+									"    <h2>[測試] 請打開微信 APP, 掃瞄以下 QR 碼:</h2>",
+									"    <h3>{{response.resources.code_url}}</h3>",
+									"    ",
+									"    <hr>",
+									"",
+									"    <div id=\"qrcode\" style=\"width: 100px; height: 100px\">{{response.resources.code_url}}</div>",
+									"    <script type=\"text/javascript\">",
+									"        jQuery('#qrcode').qrcode({",
+									"            text: $(\"#qrcode\").text()",
+									"        });\t",
+									"    </script>",
+									"`;",
+									"",
+									"pm.visualizer.set(template, {",
+									"    response: pm.response.json()",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"function getRandomInt(max) {\r",
+									"  return Math.floor(Math.random() * max);\r",
+									"}\r",
+									"\r",
+									"const moment = require('moment');\r",
+									"\r",
+									"let m2 = moment().format('YYYYMMDDHHmmssSSS');\r",
+									"let orderRef = \"wcrt\" + m2 + getRandomInt(10);\r",
+									"\r",
+									"pm.variables.set(\"prerequest.rand.outTradeNo\", orderRef);\r",
+									"pm.collectionVariables.set(\"prerequest.rand.outTradeNo\", orderRef);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n\t    \"description\": \"[TEST] CMHK WeChat Pay\",\n        \"out_trade_no\": \"{{prerequest.rand.outTradeNo}}\",\n        \"amount\": {\n            \"total\": 10,\n            \"currency\": \"HKD\"\n        },\n        \"attach\": \"PT123\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url.api.wechatv3}}/{{merchantCode}}/transaction/native",
+							"host": [
+								"{{url.api.wechatv3}}"
+							],
+							"path": [
+								"{{merchantCode}}",
+								"transaction",
+								"native"
+							]
+						},
+						"description": "### 生成QR Code\n\n> resources 內的參數為微信支付參數， 請參閱: <https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_1.shtml>\n\n- resources.amount.total\n  - 仙為單位, total = 10 = 0.1元 \n- resources.attach\n  - 自定義欄位, \n  - [場景] 門市 CRM: 為門市編號 **PTxxx**\n- resources.merchant_category_code\n  - 商家目錄為 **4815**, 移動香港 - 電信業務\n- resources.out_trade_no\n  - 商戶訂單編號, 微信要求全域唯一\n  - 測試時可使用 {{prerequest.rand.outTradeNo}} 隨機生成訂單號"
+					},
+					"response": [
+						{
+							"name": "eShop test case",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n\t    \"description\": \"CMHK-ESHOP\",\n        \"out_trade_no\": \"wcrt210716111112\",\n        \"time_start\": \"2021-06-28T17:56:01+08:00\",\n        \"time_expire\": \"2021-07-08T12:31:01+08:00\",\n        \"trade_type\": \"NATIVE\",\n        \"merchant_category_code\": \"4815\",\n        \"amount\": {\n            \"total\": 10,\n            \"currency\": \"HKD\"\n        },\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{merchantCode}}/transaction/native",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{merchantCode}}",
+										"transaction",
+										"native"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 Jul 2021 07:24:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messageId\": \"c3adb546-55b5-4c47-9c3c-1a5c1d94cf20\",\n    \"dateTime\": \"2021-07-16T07:24:06Z+0000\",\n    \"returnCode\": \"0\",\n    \"returnDesc\": \"SUCCESS\",\n    \"suppleDesc\": \"SUCCESS\",\n    \"resources\": {\n        \"code_url\": \"weixin://wxpay/bizpayurl?pr=RxN0vZbzz\"\n    }\n}"
+						},
+						{
+							"name": "With Store Info",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n\t    \"description\": \"CMHK-ESHOP\",\n        \"out_trade_no\": \"wcrt210716111113\",\n        \"time_start\": \"2021-06-28T17:56:01+08:00\",\n        \"time_expire\": \"2021-07-08T12:31:01+08:00\",\n        \"trade_type\": \"NATIVE\",\n        \"merchant_category_code\": \"4815\",\n        \"amount\": {\n            \"total\": 10,\n            \"currency\": \"HKD\"\n        },\n        \"scene_info\": {\n            \"store_info\": {\n                \"id\": \"PT123\",\n                \"name\": \"KCC Tower 1\"\n            }\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{merchantCode}}/transaction/native",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{merchantCode}}",
+										"transaction",
+										"native"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 Jul 2021 07:42:34 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messageId\": \"3e42cab5-c048-4208-97be-b967af20627c\",\n    \"dateTime\": \"2021-07-16T07:42:34Z+0000\",\n    \"returnCode\": \"0\",\n    \"returnDesc\": \"SUCCESS\",\n    \"suppleDesc\": \"SUCCESS\",\n    \"resources\": {\n        \"code_url\": \"weixin://wxpay/bizpayurl?pr=ya487aGzz\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "check",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\" http status respond normal \", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.be.ok;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"respond is JSON\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.response.to.be.json;\r",
+									"    pm.response.to.be.withBody;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"respond JSON data\", () => {\r",
+									"\r",
+									"  const responseJson = pm.response.json();\r",
+									"  pm.expect(responseJson.uuid, 'uuid is not defined').to.not.be.undefined;\r",
+									"  pm.expect(responseJson.datetime, 'datetime is not defined').to.not.be.undefined;\r",
+									"  pm.expect(responseJson.returnCode, 'returnCode is not defined').to.not.be.undefined;\r",
+									"  pm.expect(responseJson.returnDesc, 'returnDesc is not defined').to.not.be.undefined;\r",
+									"    \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "zh-CN",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n        \"out_trade_no\": \"{{prerequest.rand.outTradeNo}}\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url.api.wechatv3}}/{{merchantCode}}/transaction/check",
+							"host": [
+								"{{url.api.wechatv3}}"
+							],
+							"path": [
+								"{{merchantCode}}",
+								"transaction",
+								"check"
+							]
+						},
+						"description": "### 查單\n\n> resources 內的參數為微信支付參數， 請參閱: <https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_2.shtml>"
+					},
+					"response": [
+						{
+							"name": "2021.07.16 [Success Order] wcrt210716111112",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n        \"out_trade_no\": \"wcrt210716111112\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{merchantCode}}/transaction/check",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{merchantCode}}",
+										"transaction",
+										"check"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 16 Jul 2021 07:28:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messageId\": \"4dda14bd-1081-441c-ba55-9ec6d4adb954\",\n    \"dateTime\": \"2021-07-16T07:28:59Z+0000\",\n    \"returnCode\": \"0\",\n    \"returnDesc\": \"SUCCESS\",\n    \"suppleDesc\": \"SUCCESS\",\n    \"resources\": {\n        \"amount\": {\n            \"payer_total\": 10,\n            \"total\": 10,\n            \"exchange_rate\": {\n                \"rate\": 100000000,\n                \"type\": \"SETTLEMENT_RATE\"\n            },\n            \"currency\": \"HKD\",\n            \"payer_currency\": \"HKD\"\n        },\n        \"mchid\": \"125278178\",\n        \"out_trade_no\": \"wcrt210716111112\",\n        \"trade_state\": \"SUCCESS\",\n        \"bank_type\": \"OTHERS\",\n        \"appid\": \"wx44c623f3b058be5a\",\n        \"trade_state_desc\": \"支付成功\",\n        \"trade_type\": \"NATIVE\",\n        \"id\": \"4200001230202107164061777615\",\n        \"success_time\": \"2021-07-16T15:24:35+08:00\",\n        \"payer\": {\n            \"openid\": \"oOgzu4oYcfz4fnZ2onKsA-q6BsJo\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "close",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\" http status respond normal \", () => {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.be.ok;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"respond is JSON\", () => {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.response.to.be.json;\r",
+									"    pm.response.to.be.withBody;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"respond JSON data\", () => {\r",
+									"\r",
+									"  const responseJson = pm.response.json();\r",
+									"  pm.expect(responseJson.uuid, 'uuid is not defined').to.not.be.undefined;\r",
+									"  pm.expect(responseJson.datetime, 'datetime is not defined').to.not.be.undefined;\r",
+									"  pm.expect(responseJson.returnCode, 'returnCode is not defined').to.not.be.undefined;\r",
+									"  pm.expect(responseJson.returnDesc, 'returnDesc is not defined').to.not.be.undefined;\r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n        \"out_trade_no\": \"{{prerequest.rand.outTradeNo}}\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url.api.wechatv3}}/{{merchantCode}}/transaction/close",
+							"host": [
+								"{{url.api.wechatv3}}"
+							],
+							"path": [
+								"{{merchantCode}}",
+								"transaction",
+								"close"
+							]
+						},
+						"description": "### 關單\n\n> resources 內的參數為微信支付參數， 請參閱: <https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_3.shtml>\n\n只要入參正確，不論是否關單成功一律返回 httpStatus: 204.\n\n請再次調用查單去檢查訂單是否成功關閉"
+					},
+					"response": [
+						{
+							"name": "close",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uuid\": \"{{prerequest.uuid}}\",\n    \"signType\": \"md5\",\n    \"sign\": \"{{prerequest.sign}}\",\n    \"resources\": {\n        \"out_trade_no\": \"wcr145645654448901\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/{{merchantCode}}/transaction/close",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"{{merchantCode}}",
+										"transaction",
+										"close"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Jul 2021 03:13:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messageId\": \"fa1d335c-309a-44a1-a51a-c196f7ad2c32\",\n    \"dateTime\": \"2021-07-19T03:13:12Z+0000\",\n    \"returnCode\": \"0\",\n    \"returnDesc\": \"SUCCESS\",\n    \"suppleDesc\": \"SUCCESS\",\n    \"resources\": {\n        \"httpStatus\": \"204\"\n    }\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"function makeid(length) {",
+							"    var result           = '';",
+							"    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';",
+							"    var charactersLength = characters.length;",
+							"    for ( var i = 0; i < length; i++ ) {",
+							"      result += characters.charAt(Math.floor(Math.random() * ",
+							" charactersLength));",
+							"   }",
+							"   return result;",
+							"}",
+							"",
+							"let merchantCode = pm.environment.get(\"merchantCode\");",
+							"let merchantKey = pm.environment.get(\"merchantKey\");",
+							"",
+							"let uuid = makeid(10);",
+							"",
+							"const number = merchantCode + merchantKey + uuid;",
+							"var sign = CryptoJS.MD5(number).toString();",
+							"",
+							"pm.variables.set(\"prerequest.sign\", sign);",
+							"pm.variables.set(\"prerequest.uuid\", uuid);"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "payment",
+			"item": [
+				{
+					"name": "notify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"summary\": \"支付成功\",\r\n    \"event_type\": \"TRANSACTION.SUCCESS\",\r\n    \"create_time\": \"2021-10-12T10:12:59+08:00\",\r\n    \"resource\": {\r\n        \"associated_data\": \"transaction\",\r\n        \"ciphertext\": \"K6DJRpvHDWvnXmqeCdENTMtiaQARQRr9L9Y4FNB0yxhrtaCEtoYdUaKETCh7EsHHl53GexTyaSRx5AhVZvU9+ZdCvrOAghfO//sZPmypEAL2i61Fys6wOZF+bopy4VGyKydFIcx1waOkXgmh46uhYc3g2vUyJ3HuQwNynd/cdjb2HI5ugwWN7kRIjdN8TvBOEhUkRsO+/vRE1nqn6RWgOTQKOCP/MfpHeolWA1KFxDIvGzzjFULLwS4xhzJaYa2wXT02OQbw6IAD0NQ3tx4LIdYeHbSDElV9K3vKOOFyrGENJ/jKU6zkWUyf7/7n8HHBjQvfgjHgmZnnKm81RerNU8GvIG9k2WPnBvqQwLHCrdaNUACL0GejgNMVVtVRXq7OsKuzMwGraM96Ay8KVoOd2AaV6AYISY9mwcdn5Lav0eqDbwuAeqMdqs1glE3tWiGr9IrkB1Zcx/DgGPCiDIW3GGSid83rHg1T8jUgKHJo+EEE9OELrNomOH2y6mvdE6D7QcaZSoZbbQne0k92OqbbfyYtrLAqJccIEOgsuXOkh+GXUHq0Y5ZKdWj+aWV+WjJAieSMBjUyfJj9VSYkP6jbn6vDqb2e9LlQ8fLmSHU1pZVLXaDnsaqu9sTrnyowxyxdsV8sPvSnLJtgQq7CI5PrGac3cX/3T/8MBQ==\",\r\n        \"original_type\": \"transaction\",\r\n        \"nonce\": \"Y8MtUk8EVgmJ\",\r\n        \"algorithm\": \"AEAD_AES_256_GCM\"\r\n    },\r\n    \"resource_type\": \"encrypt-resource\",\r\n    \"id\": \"4dbe8d1f-01a9-548a-a6b5-1fc735cdc89a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url.api.wechatv3}}/{{wechat.mchid}}/{{wechat.appid}}/payment/notify/{{merchantMethodID}}",
+							"host": [
+								"{{url.api.wechatv3}}"
+							],
+							"path": [
+								"{{wechat.mchid}}",
+								"{{wechat.appid}}",
+								"payment",
+								"notify",
+								"{{merchantMethodID}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "prerequest.rand.outTradeNo",
+			"value": ""
+		}
+	]
+}

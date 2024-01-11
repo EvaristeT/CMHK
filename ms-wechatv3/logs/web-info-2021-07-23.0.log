@@ -1,0 +1,158 @@
+2021-07-23 09:21:05.078 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-23 09:21:05.082 [restartedMain] INFO  com.cmhk.ztpayment.WechatApiApplication - Starting WechatApiApplication using Java 1.8.0_292 on IT-MacBook-6921.local with PID 1919 (/Users/p6317/Documents/project/java/payment/ms-wechatv3/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/ms-wechatv3)
+2021-07-23 09:21:05.084 [restartedMain] INFO  com.cmhk.ztpayment.WechatApiApplication - The following profiles are active: dev
+2021-07-23 09:21:05.132 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 09:21:05.132 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 09:21:05.940 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 09:21:06.198 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 238 ms. Found 7 JPA repository interfaces.
+2021-07-23 09:21:07.262 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-07-23 09:21:07.275 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-07-23 09:21:07.277 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-23 09:21:07.277 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 09:21:07.364 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-23 09:21:07.365 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2232 ms
+2021-07-23 09:21:07.549 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-23 09:21:09.412 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-23 09:21:09.571 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 09:21:09.663 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-23 09:21:09.887 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 09:21:10.083 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 09:21:11.608 [restartedMain] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 09:21:11.619 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 09:21:13.356 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-23 09:21:13.377 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-07-23 09:21:13.404 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-07-23 09:21:13.856 [restartedMain] INFO  com.cmhk.ztpayment.WechatApiApplication - Started WechatApiApplication in 9.723 seconds (JVM running for 10.455)
+2021-07-23 09:22:41.367 [http-nio-8082-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 09:22:41.367 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-23 09:22:41.369 [http-nio-8082-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-07-23 09:22:41.556 [http-nio-8082-exec-2] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:22:41.556 [http-nio-8082-exec-2] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=CMHK WeChat Pay, out_trade_no=wcrt202107230922412732, time_start=null, time_expire=null, attach=PT123, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=WXAppNativeOrderRequest.Amount(total=10, currency=HKD), detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:22:41.557 [http-nio-8082-exec-2] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - request appId: null, mchId: null, notify url: null
+2021-07-23 09:22:41.557 [http-nio-8082-exec-2] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - CheckResourcesAspect success
+2021-07-23 09:22:41.557 [http-nio-8082-exec-2] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:22:41.557 [http-nio-8082-exec-2] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=CMHK WeChat Pay, out_trade_no=wcrt202107230922412732, time_start=null, time_expire=null, attach=PT123, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=WXAppNativeOrderRequest.Amount(total=10, currency=HKD), detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:22:41.558 [http-nio-8082-exec-2] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Merchant Code: cmhk.crm, Base Request: uuid->q1RxG0mKiW signType->md5 sign->804dcb9330e307e3fc7975ea5afe3f4f
+2021-07-23 09:22:41.765 [http-nio-8082-exec-2] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - merchantKey = hffCd65hPumWN6cj 
+2021-07-23 09:22:41.779 [http-nio-8082-exec-2] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - accountId = d8807eae-e708-4311-8054-45eb7317582e 
+2021-07-23 09:22:41.786 [http-nio-8082-exec-2] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - MD5 Check false
+2021-07-23 09:23:43.024 [http-nio-8082-exec-5] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:23:43.024 [http-nio-8082-exec-5] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=CMHK WeChat Pay, out_trade_no=wcrt202107230923429982, time_start=null, time_expire=null, attach=PT123, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=WXAppNativeOrderRequest.Amount(total=10, currency=HKD), detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:23:43.024 [http-nio-8082-exec-5] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - request appId: null, mchId: null, notify url: null
+2021-07-23 09:23:43.024 [http-nio-8082-exec-5] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - CheckResourcesAspect success
+2021-07-23 09:23:43.024 [http-nio-8082-exec-5] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:23:43.025 [http-nio-8082-exec-5] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=CMHK WeChat Pay, out_trade_no=wcrt202107230923429982, time_start=null, time_expire=null, attach=PT123, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=WXAppNativeOrderRequest.Amount(total=10, currency=HKD), detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:23:43.025 [http-nio-8082-exec-5] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Merchant Code: cmhk.crm, Base Request: uuid->i12HSjar5m signType->md5 sign->eb721bdd9c3ad6989e63951c4e8fae15
+2021-07-23 09:23:43.038 [http-nio-8082-exec-5] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - merchantKey = hffCd65hPumWN6cj 
+2021-07-23 09:23:43.044 [http-nio-8082-exec-5] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - accountId = d8807eae-e708-4311-8054-45eb7317582e 
+2021-07-23 09:23:43.044 [http-nio-8082-exec-5] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - MD5 Check false
+2021-07-23 09:25:12.607 [http-nio-8082-exec-8] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:12.608 [http-nio-8082-exec-8] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=CMHK WeChat Pay, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=PT123, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=WXAppNativeOrderRequest.Amount(total=10, currency=HKD), detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:12.608 [http-nio-8082-exec-8] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - request appId: null, mchId: null, notify url: null
+2021-07-23 09:25:12.608 [http-nio-8082-exec-8] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - CheckResourcesAspect success
+2021-07-23 09:25:12.608 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:12.608 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=CMHK WeChat Pay, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=PT123, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=WXAppNativeOrderRequest.Amount(total=10, currency=HKD), detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:12.608 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Merchant Code: cmhk.crm, Base Request: uuid->FEOknezJpr signType->md5 sign->eab22b100be7d196d93592fdde17c548
+2021-07-23 09:25:12.621 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - merchantKey = hffCd65hPumWN6cj 
+2021-07-23 09:25:12.627 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - accountId = d8807eae-e708-4311-8054-45eb7317582e 
+2021-07-23 09:25:12.627 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - MD5 Check true
+2021-07-23 09:25:12.645 [http-nio-8082-exec-8] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - appId = wx44c623f3b058be5a >>> mchId = 125278178 
+2021-07-23 09:25:12.800 [http-nio-8082-exec-8] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - WeChatV3->url POST https://api.mch.weixin.qq.com/hk/v3/transactions/native
+2021-07-23 09:25:12.831 [http-nio-8082-exec-8] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - >>> WeChatV3Access - WebClient : POST >>>
+2021-07-23 09:25:14.444 [http-nio-8082-exec-8] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Request body: {"amount":{"total":10,"currency":"HKD"},"mchid":"125278178","out_trade_no":"wcrt202107230925125929","merchant_category_code":"4815","appid":"wx44c623f3b058be5a","description":"CMHK WeChat Pay","trade_type":"NATIVE","attach":"PT123","notify_url":"https://epay-dev1v1.hk.chinamobile.com/wechatv3-125278178.jsp"}
+2021-07-23 09:25:14.445 [http-nio-8082-exec-8] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - response body: {"code_url":"weixin://wxpay/bizpayurl?pr=jONVnixzz"}
+2021-07-23 09:25:14.445 [http-nio-8082-exec-8] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - <<< WeChatV3Access - WebClient : POST <<<
+2021-07-23 09:25:14.445 [http-nio-8082-exec-8] INFO  c.cmhk.ztpayment.services.impl.WeChatV3ServiceImpl - native response json = {"code_url":"weixin://wxpay/bizpayurl?pr=jONVnixzz"}
+2021-07-23 09:25:21.205 [http-nio-8082-exec-9] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:21.205 [http-nio-8082-exec-9] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=null, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=null, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=null, detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:21.206 [http-nio-8082-exec-9] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - request appId: null, mchId: null, notify url: null
+2021-07-23 09:25:21.206 [http-nio-8082-exec-9] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - CheckResourcesAspect success
+2021-07-23 09:25:21.206 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:21.206 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=null, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=null, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=null, detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:21.206 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Merchant Code: cmhk.crm, Base Request: uuid->ckA9TlS0IV signType->md5 sign->d5cc7bb8f610db2c0bfce81f37cf596f
+2021-07-23 09:25:21.218 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - merchantKey = hffCd65hPumWN6cj 
+2021-07-23 09:25:21.226 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - accountId = d8807eae-e708-4311-8054-45eb7317582e 
+2021-07-23 09:25:21.226 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - MD5 Check true
+2021-07-23 09:25:21.240 [http-nio-8082-exec-9] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - appId = wx44c623f3b058be5a >>> mchId = 125278178 
+2021-07-23 09:25:21.263 [http-nio-8082-exec-9] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - WeChatV3->url GET https://api.mch.weixin.qq.com/hk/v3/transactions/out-trade-no/wcrt202107230925125929?mchid=125278178
+2021-07-23 09:25:21.264 [http-nio-8082-exec-9] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Remove body params out_trade_no
+2021-07-23 09:25:21.264 [http-nio-8082-exec-9] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Remove body params mchid
+2021-07-23 09:25:21.271 [http-nio-8082-exec-9] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - >>> WeChatV3Access - WebClient : GET >>>
+2021-07-23 09:25:21.506 [http-nio-8082-exec-9] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - response body: {"appid":"wx44c623f3b058be5a","mchid":"125278178","out_trade_no":"wcrt202107230925125929","payer":{"openid":""},"amount":{"total":10},"trade_state":"NOTPAY","trade_state_desc":"订单未支付"}
+2021-07-23 09:25:21.507 [http-nio-8082-exec-9] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - <<< WeChatV3Access - WebClient : GET <<<
+2021-07-23 09:25:21.507 [http-nio-8082-exec-9] INFO  c.cmhk.ztpayment.services.impl.WeChatV3ServiceImpl - check response json = {"amount":{"total":10},"mchid":"125278178","out_trade_no":"wcrt202107230925125929","trade_state":"NOTPAY","appid":"wx44c623f3b058be5a","trade_state_desc":"订单未支付","payer":{"openid":""}} 
+2021-07-23 09:25:30.914 [http-nio-8082-exec-10] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:30.915 [http-nio-8082-exec-10] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=null, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=null, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=null, detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:30.915 [http-nio-8082-exec-10] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - request appId: null, mchId: null, notify url: null
+2021-07-23 09:25:30.915 [http-nio-8082-exec-10] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - CheckResourcesAspect success
+2021-07-23 09:25:30.915 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:30.915 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=null, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=null, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=null, detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:30.915 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Merchant Code: cmhk.crm, Base Request: uuid->fhiWc8O25t signType->md5 sign->8d0cfa437fe58c61c0f32f529b6c758d
+2021-07-23 09:25:30.929 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - merchantKey = hffCd65hPumWN6cj 
+2021-07-23 09:25:30.937 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - accountId = d8807eae-e708-4311-8054-45eb7317582e 
+2021-07-23 09:25:30.938 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - MD5 Check true
+2021-07-23 09:25:30.949 [http-nio-8082-exec-10] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - appId = wx44c623f3b058be5a >>> mchId = 125278178 
+2021-07-23 09:25:30.974 [http-nio-8082-exec-10] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - WeChatV3->url POST https://api.mch.weixin.qq.com/hk/v3/transactions/out-trade-no/wcrt202107230925125929/close
+2021-07-23 09:25:30.975 [http-nio-8082-exec-10] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Remove body params out_trade_no
+2021-07-23 09:25:30.982 [http-nio-8082-exec-10] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - >>> WeChatV3Access - WebClient : POST >>>
+2021-07-23 09:25:32.116 [http-nio-8082-exec-10] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Request body: {"mchid":"125278178"}
+2021-07-23 09:25:32.117 [http-nio-8082-exec-10] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - response body: null
+2021-07-23 09:25:32.117 [http-nio-8082-exec-10] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - <<< WeChatV3Access - WebClient : POST <<<
+2021-07-23 09:25:32.118 [http-nio-8082-exec-10] INFO  c.cmhk.ztpayment.services.impl.WeChatV3ServiceImpl - close response json = null , http response code = 204 
+2021-07-23 09:25:48.705 [http-nio-8082-exec-1] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:48.705 [http-nio-8082-exec-1] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=null, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=null, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=null, detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:48.706 [http-nio-8082-exec-1] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - request appId: null, mchId: null, notify url: null
+2021-07-23 09:25:48.706 [http-nio-8082-exec-1] INFO  c.cmhk.ztpayment.aspects.impl.CheckResourcesAspect - CheckResourcesAspect success
+2021-07-23 09:25:48.706 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: merchantCode->cmhk.crm
+2021-07-23 09:25:48.706 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Input: request->WeChatTransactionRequest(resources=WXAppNativeOrderRequest(appid=null, mchid=null, description=null, out_trade_no=wcrt202107230925125929, time_start=null, time_expire=null, attach=null, notify_url=null, goods_tag=null, trade_type=null, merchant_category_code=null, amount=null, detail=null, scene_info=null, settle_info=null))
+2021-07-23 09:25:48.706 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - Merchant Code: cmhk.crm, Base Request: uuid->CbmdMFSSX6 signType->md5 sign->00ead2b9347855e766ea441f9a1aa9c9
+2021-07-23 09:25:48.720 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - merchantKey = hffCd65hPumWN6cj 
+2021-07-23 09:25:48.727 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - accountId = d8807eae-e708-4311-8054-45eb7317582e 
+2021-07-23 09:25:48.727 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - MD5 Check true
+2021-07-23 09:25:48.741 [http-nio-8082-exec-1] INFO  c.c.ztpayment.aspects.impl.VerifySignatureAspect - appId = wx44c623f3b058be5a >>> mchId = 125278178 
+2021-07-23 09:25:48.785 [http-nio-8082-exec-1] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - WeChatV3->url GET https://api.mch.weixin.qq.com/hk/v3/transactions/out-trade-no/wcrt202107230925125929?mchid=125278178
+2021-07-23 09:25:48.786 [http-nio-8082-exec-1] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Remove body params out_trade_no
+2021-07-23 09:25:48.786 [http-nio-8082-exec-1] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - Remove body params mchid
+2021-07-23 09:25:48.790 [http-nio-8082-exec-1] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - >>> WeChatV3Access - WebClient : GET >>>
+2021-07-23 09:25:49.676 [http-nio-8082-exec-1] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - response body: {"appid":"wx44c623f3b058be5a","mchid":"125278178","out_trade_no":"wcrt202107230925125929","payer":{"openid":""},"trade_state":"CLOSED","trade_state_desc":"订单已关闭","attach":"PT123"}
+2021-07-23 09:25:49.676 [http-nio-8082-exec-1] INFO  com.cmhk.ztpayment.services.access.WeChatV3Access - <<< WeChatV3Access - WebClient : GET <<<
+2021-07-23 09:25:49.677 [http-nio-8082-exec-1] INFO  c.cmhk.ztpayment.services.impl.WeChatV3ServiceImpl - check response json = {"mchid":"125278178","out_trade_no":"wcrt202107230925125929","trade_state":"CLOSED","appid":"wx44c623f3b058be5a","trade_state_desc":"订单已关闭","attach":"PT123","payer":{"openid":""}} 
+2021-07-23 09:47:58.204 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 09:47:58.209 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-23 09:47:58.221 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-07-23 09:47:58.222 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2021-07-23 09:47:58.222 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2021-07-23 11:51:08.184 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-23 11:51:08.189 [restartedMain] INFO  com.cmhk.ztpayment.WechatApiApplication - Starting WechatApiApplication using Java 1.8.0_292 on IT-MacBook-6921.local with PID 3703 (/Users/p6317/Documents/project/java/payment/ms-wechatv3/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/ms-wechatv3)
+2021-07-23 11:51:08.189 [restartedMain] INFO  com.cmhk.ztpayment.WechatApiApplication - The following profiles are active: dev
+2021-07-23 11:51:08.236 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-23 11:51:08.236 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-23 11:51:08.932 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 11:51:09.097 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 7 JPA repository interfaces.
+2021-07-23 11:51:09.934 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-07-23 11:51:09.945 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-07-23 11:51:09.945 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-23 11:51:09.946 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-23 11:51:10.019 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-23 11:51:10.019 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1783 ms
+2021-07-23 11:51:10.172 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-07-23 11:51:10.624 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-07-23 11:51:10.731 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 11:51:10.777 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-23 11:51:10.898 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 11:51:11.001 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 11:51:12.353 [restartedMain] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 11:51:12.365 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 11:51:14.465 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-07-23 11:51:14.483 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-07-23 11:51:14.502 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-07-23 11:51:14.821 [restartedMain] INFO  com.cmhk.ztpayment.WechatApiApplication - Started WechatApiApplication in 7.299 seconds (JVM running for 7.755)
+2021-07-23 11:51:55.326 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 11:51:55.326 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-07-23 11:51:55.328 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-07-23 11:51:56.070 [http-nio-8082-exec-8] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 366 ms
+2021-07-23 18:22:47.812 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 18:22:47.819 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-07-23 18:22:47.831 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-07-23 18:22:47.832 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2021-07-23 18:22:47.832 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
