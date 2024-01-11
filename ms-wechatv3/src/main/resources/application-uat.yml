@@ -1,0 +1,49 @@
+server:
+  address: ${server-address:0.0.0.0}
+  port: ${server-port:8080}
+
+logging:
+  config: classpath:logback-spring-uat.xml
+  level:
+    root: INFO
+    '[reactor.netty.http.client]': DEBUG
+    # '[org.hibernate.SQL]': DEBUG
+    # '[org.hibernate.type]': TRACE
+    # '[org.hibernate.type.descriptor.sql]': TRACE
+
+nacos:
+  config:
+    server-addr: ${nacos-address:172.16.0.69}:${nacos-port:8848}
+    namespace: zt-payment-dev
+    group: ms-wechatv3
+
+spring:
+  application:
+    name: wechatapi-v3
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: ${nacos-address:172.16.0.69}:${nacos-port:8848}
+        service: ms-wechatv3
+        namespace: zt-payment-dev
+        group: zt-payment
+        ip: ${nacos-discovery-ip:${server.address}}
+        port: ${nacos-discovery-port:${server.port}}
+  datasource:
+    url: jdbc:mysql://10.0.17.184:3306/pay
+    username: pay
+    password: pay
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /api/wechatv3/doc.html
+  api-docs:
+    enabled: true
+    path: /api/wechatv3/doc
