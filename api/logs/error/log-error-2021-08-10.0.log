@@ -1,0 +1,6 @@
+2021-08-10 17:41:08.571 ERROR 1396 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-08-10 17:41:08.573 ERROR 1396 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数
+2021-08-10 17:42:26.703 ERROR 1540 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-08-10 17:42:26.705 ERROR 1540 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数
+2021-08-10 17:51:01.898 ERROR 2112 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-08-10 17:51:01.899 ERROR 2112 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数

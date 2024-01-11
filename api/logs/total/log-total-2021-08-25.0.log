@@ -1,0 +1,980 @@
+2021-08-25 11:10:46.460  INFO 4232 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 4232 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 11:10:46.464  INFO 4232 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 11:10:46.555  INFO 4232 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 11:10:48.508  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.511  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$a95639cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.621  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.875  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.876  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.878  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.880  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$ddbc04ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.883  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.979  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.986  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$6827b0a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.993  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.995  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:48.997  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:49.004  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$85316bab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:49.009  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$96c52861] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:49.016  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:49.095  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:54.065  INFO 4232 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 11:10:54.950  WARN 4232 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:10:54.975  WARN 4232 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:10:55.109  WARN 4232 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:10:55.192  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.198  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.199  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.202  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.207  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.210  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.212  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.212  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$e3cad6cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.283  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.293  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.295  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.315  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2d556573] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.384  INFO 4232 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3791cd4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:10:55.998  INFO 4232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 11:10:56.028  INFO 4232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 11:10:56.028  INFO 4232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 11:10:56.162  INFO 4232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 11:10:56.163  INFO 4232 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9608 ms
+2021-08-25 11:10:58.220  INFO 4232 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 11:10:58.425  INFO 4232 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 11:10:58.692  INFO 4232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:10:59.122  INFO 4232 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 11:10:59.144  INFO 4232 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 11:10:59.144  INFO 4232 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 11:10:59.145  INFO 4232 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 11:10:59.146  INFO 4232 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 11:10:59.146  INFO 4232 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 11:10:59.146  INFO 4232 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 11:10:59.147  INFO 4232 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@64ab33ea
+2021-08-25 11:10:59.164  INFO 4232 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 11:10:59.253  INFO 4232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 11:10:59.283  INFO 4232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 11:10:59.334  INFO 4232 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 11:10:59.445  INFO 4232 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 11:10:59.445  INFO 4232 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 11:10:59.516  INFO 4232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 11:10:59.521  INFO 4232 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 14.043 seconds (JVM running for 22.941)
+2021-08-25 11:11:25.215  INFO 4232 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 11:11:25.217  INFO 4232 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 11:11:25.234  INFO 4232 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-08-25 11:11:25.662  INFO 4232 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:11:25.665  INFO 4232 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 8309c644-8fb2-407b-aaae-1e7143a8ea02, md5 = C80BE618DAB1E2BEF52A53955E5E97FC, out_trade_no = 8861484321081815421139
+2021-08-25 11:11:25.687  INFO 4232 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"8861484321081815421139"},"sign":"C80BE618DAB1E2BEF52A53955E5E97FC","signType":"md5","uuid":"8309c644-8fb2-407b-aaae-1e7143a8ea02"}
+2021-08-25 11:11:55.903  INFO 4232 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"bde86aed-2eec-40ca-99eb-37a49e589370","datetime":"2021-08-25T03:11:55Z+0000","returnCode":"-301","returnDesc":"Merchant does not exist","suppleDesc":"Cannot find merchant"}
+2021-08-25 11:11:55.948  INFO 4232 --- [http-nio-8083-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"1ea9343c-8441-47d7-8c5a-80ab265d3fea","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:11:25
+ 调用结束时间: 2021-08-25 11:11:55
+ ------------------------------------------------
+2021-08-25 11:13:13.302  INFO 4232 --- [http-nio-8083-exec-5] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:13:13.302  INFO 4232 --- [http-nio-8083-exec-5] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 730a4b22-f13d-4247-94cf-ca3d1e42f2d2, md5 = BC8A4F986208B19F19F9D4BB56C6D214, out_trade_no = 8861484321081815421139
+2021-08-25 11:13:13.302  INFO 4232 --- [http-nio-8083-exec-5] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"8861484321081815421139"},"sign":"BC8A4F986208B19F19F9D4BB56C6D214","signType":"md5","uuid":"730a4b22-f13d-4247-94cf-ca3d1e42f2d2"}
+2021-08-25 11:13:36.011  INFO 4232 --- [http-nio-8083-exec-5] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"0f155a26-75e6-456c-9008-b43e1e5a6b68","datetime":"2021-08-25T03:13:36Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"SERVER ERROR"}
+2021-08-25 11:13:36.016  INFO 4232 --- [http-nio-8083-exec-5] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"f8a81647-c852-48a7-a586-312688a871aa","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:13:13
+ 调用结束时间: 2021-08-25 11:13:36
+ ------------------------------------------------
+2021-08-25 11:14:10.164  INFO 4232 --- [http-nio-8083-exec-8] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:14:10.164  INFO 4232 --- [http-nio-8083-exec-8] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 7a8456c5-234e-495c-b467-c59608dc93d2, md5 = EDC28CDBD198BFBCC2872BD5FAA92BF6, out_trade_no = 8861484321081815421139
+2021-08-25 11:14:10.165  INFO 4232 --- [http-nio-8083-exec-8] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"8861484321081815421139"},"sign":"EDC28CDBD198BFBCC2872BD5FAA92BF6","signType":"md5","uuid":"7a8456c5-234e-495c-b467-c59608dc93d2"}
+2021-08-25 11:14:10.865  INFO 4232 --- [http-nio-8083-exec-8] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"7e795dc7-a051-4df7-9b3d-b429f76797f9","datetime":"2021-08-25T03:14:10Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"SERVER ERROR"}
+2021-08-25 11:14:10.868  INFO 4232 --- [http-nio-8083-exec-8] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"4fd3f86f-f215-4a24-ad64-179064aac88b","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:14:10
+ 调用结束时间: 2021-08-25 11:14:10
+ ------------------------------------------------
+2021-08-25 11:15:56.758  INFO 4232 --- [http-nio-8083-exec-11] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:15:56.759  INFO 4232 --- [http-nio-8083-exec-11] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 669318e1-6799-4424-879c-8e3e679b6591, md5 = 10B68D1D4D371500BE437CEAF92DF0BA, out_trade_no = 8861484321081815421139
+2021-08-25 11:15:56.759  INFO 4232 --- [http-nio-8083-exec-11] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"8861484321081815421139"},"sign":"10B68D1D4D371500BE437CEAF92DF0BA","signType":"md5","uuid":"669318e1-6799-4424-879c-8e3e679b6591"}
+2021-08-25 11:15:58.144  INFO 4232 --- [http-nio-8083-exec-11] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"c097608b-f443-4c10-b5e6-89a555c5d5a4","datetime":"2021-08-25T03:15:58Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"SERVER ERROR"}
+2021-08-25 11:15:58.146  INFO 4232 --- [http-nio-8083-exec-11] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"a2bc85d6-66fc-4960-9777-9da5ace33669","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:15:56
+ 调用结束时间: 2021-08-25 11:15:58
+ ------------------------------------------------
+2021-08-25 11:21:27.637  INFO 4232 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 11:21:27.639  INFO 4232 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 11:21:27.640  INFO 4232 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 11:21:27.640  INFO 4232 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 11:21:27.640  INFO 4232 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 11:21:27.642  INFO 4232 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 11:21:27.643  INFO 4232 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:21:27.645  INFO 4232 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 11:21:27.664  INFO 4232 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 11:21:37.578  INFO 4667 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 4667 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 11:21:37.581  INFO 4667 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 11:21:37.639  INFO 4667 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 11:21:39.152  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.155  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$225c2fe1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.224  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.405  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.407  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.409  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.410  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$56c1fb02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.413  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.488  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.496  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$e12da6bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.504  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.506  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.507  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.514  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$fe3761c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.519  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$fcb1e76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.525  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:39.576  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:44.526  INFO 4667 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 11:21:45.541  WARN 4667 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:21:45.559  WARN 4667 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:21:45.655  WARN 4667 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:21:45.726  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.730  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.731  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.735  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.739  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.741  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.743  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.744  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$5cd0cce1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.805  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.812  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.814  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.845  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$a65b5b88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:45.911  INFO 4667 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b097c363] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:21:46.391  INFO 4667 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 11:21:46.416  INFO 4667 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 11:21:46.416  INFO 4667 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 11:21:46.518  INFO 4667 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 11:21:46.518  INFO 4667 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8878 ms
+2021-08-25 11:21:48.467  INFO 4667 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 11:21:48.684  INFO 4667 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 11:21:48.962  INFO 4667 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:21:49.455  INFO 4667 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 11:21:49.479  INFO 4667 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 11:21:49.479  INFO 4667 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 11:21:49.481  INFO 4667 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 11:21:49.482  INFO 4667 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 11:21:49.483  INFO 4667 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 11:21:49.483  INFO 4667 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 11:21:49.483  INFO 4667 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7093da5d
+2021-08-25 11:21:49.506  INFO 4667 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 11:21:49.607  INFO 4667 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 11:21:49.629  INFO 4667 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 11:21:49.675  INFO 4667 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 11:21:49.784  INFO 4667 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 11:21:49.785  INFO 4667 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 11:21:49.855  INFO 4667 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 11:21:49.859  INFO 4667 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.136 seconds (JVM running for 21.891)
+2021-08-25 11:22:00.858  INFO 4667 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 11:22:00.860  INFO 4667 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 11:22:00.877  INFO 4667 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-08-25 11:22:01.311  INFO 4667 --- [http-nio-8083-exec-1] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:22:01.313  INFO 4667 --- [http-nio-8083-exec-1] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = d6bc5744-5544-4f71-a24a-2306c47c262f, md5 = C87459D6DF212F8DFF19EF939D4F3166, out_trade_no = 8861484321081815421139
+2021-08-25 11:22:01.338  INFO 4667 --- [http-nio-8083-exec-1] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"8861484321081815421139"},"sign":"C87459D6DF212F8DFF19EF939D4F3166","signType":"md5","uuid":"d6bc5744-5544-4f71-a24a-2306c47c262f"}, json = {"sign":"C87459D6DF212F8DFF19EF939D4F3166","resources":{"outTradeNo":"8861484321081815421139"},"signType":"md5","uuid":"d6bc5744-5544-4f71-a24a-2306c47c262f"}
+2021-08-25 11:22:01.902  INFO 4667 --- [http-nio-8083-exec-1] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"fb040a14-b0a2-4854-a18c-2baad5551446","datetime":"2021-08-25T03:22:01Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"SERVER ERROR"}
+2021-08-25 11:22:01.950  INFO 4667 --- [http-nio-8083-exec-1] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"702446e5-112e-4786-b08f-1bea31118702","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:22:00
+ 调用结束时间: 2021-08-25 11:22:01
+ ------------------------------------------------
+2021-08-25 11:29:42.183  INFO 4667 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 11:29:42.184  INFO 4667 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 11:29:42.185  INFO 4667 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 11:29:42.185  INFO 4667 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 11:29:42.185  INFO 4667 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 11:29:42.186  INFO 4667 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 11:29:42.187  INFO 4667 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:29:42.189  INFO 4667 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 11:29:42.208  INFO 4667 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 11:29:52.045  INFO 5020 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 5020 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 11:29:52.047  INFO 5020 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 11:29:52.112  INFO 5020 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 11:29:53.659  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.661  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$bf2ba830] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.728  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.911  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.913  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.915  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.917  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$f3917351] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.919  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:53.998  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.004  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$7dfd1f0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.012  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.014  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.015  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.021  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$9b06da0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.026  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$ac9a96c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.031  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:54.089  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:29:58.912  INFO 5020 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 11:30:00.091  WARN 5020 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:30:00.113  WARN 5020 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:30:00.223  WARN 5020 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:30:00.295  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.299  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.300  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.304  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.307  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.310  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.312  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.313  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$f9a04530] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.377  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.383  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.384  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.407  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$432ad3d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.468  INFO 5020 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d673bb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:30:00.966  INFO 5020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 11:30:00.993  INFO 5020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 11:30:00.993  INFO 5020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 11:30:01.106  INFO 5020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 11:30:01.106  INFO 5020 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8994 ms
+2021-08-25 11:30:03.097  INFO 5020 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 11:30:03.267  INFO 5020 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 11:30:03.506  INFO 5020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:30:03.913  INFO 5020 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 11:30:03.931  INFO 5020 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 11:30:03.931  INFO 5020 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 11:30:03.932  INFO 5020 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 11:30:03.933  INFO 5020 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 11:30:03.933  INFO 5020 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 11:30:03.933  INFO 5020 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 11:30:03.933  INFO 5020 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6bc4c49a
+2021-08-25 11:30:03.952  INFO 5020 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 11:30:04.029  INFO 5020 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 11:30:04.054  INFO 5020 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 11:30:04.103  INFO 5020 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 11:30:04.211  INFO 5020 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 11:30:04.211  INFO 5020 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 11:30:04.279  INFO 5020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 11:30:04.283  INFO 5020 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.092 seconds (JVM running for 21.766)
+2021-08-25 11:30:08.480  INFO 5020 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 11:30:08.482  INFO 5020 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 11:30:08.500  INFO 5020 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2021-08-25 11:30:09.237  INFO 5020 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:30:09.240  INFO 5020 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 04dbb4f5-eae4-453a-8129-6ea9fa955966, md5 = 09E7E5D6EFBE0EADFAEED72E1F734DA7, out_trade_no = 8861484321081815421139
+2021-08-25 11:30:09.280  INFO 5020 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"8861484321081815421139"},"sign":"09E7E5D6EFBE0EADFAEED72E1F734DA7","signType":"md5","uuid":"04dbb4f5-eae4-453a-8129-6ea9fa955966"}, json = {"sign":"09E7E5D6EFBE0EADFAEED72E1F734DA7","resources":{"outTradeNo":"8861484321081815421139"},"signType":"md5","uuid":"04dbb4f5-eae4-453a-8129-6ea9fa955966"}, json2 = {"uuid":"04dbb4f5-eae4-453a-8129-6ea9fa955966","signType":"md5","sign":"09E7E5D6EFBE0EADFAEED72E1F734DA7","resources":{"out_trade_no":"8861484321081815421139"}}
+2021-08-25 11:30:10.424  INFO 5020 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"27f7ee98-d733-41ab-8501-169a45e5c14c","datetime":"2021-08-25T03:30:10Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"SERVER ERROR"}
+2021-08-25 11:30:10.458  INFO 5020 --- [http-nio-8083-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"31fc9981-b1dc-4130-99cf-f347e2ec818c","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:30:08
+ 调用结束时间: 2021-08-25 11:30:10
+ ------------------------------------------------
+2021-08-25 11:36:42.557  INFO 5020 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 11:36:42.559  INFO 5020 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 11:36:42.559  INFO 5020 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 11:36:42.559  INFO 5020 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 11:36:42.559  INFO 5020 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 11:36:42.561  INFO 5020 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 11:36:42.562  INFO 5020 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:36:42.563  INFO 5020 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 11:36:42.579  INFO 5020 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 11:36:52.360  INFO 5278 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 5278 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 11:36:52.366  INFO 5278 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 11:36:52.430  INFO 5278 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 11:36:54.011  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.013  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$a8913e8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.084  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.270  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.272  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.274  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.276  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$dcf709ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.278  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.357  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.364  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$6762b567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.372  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.374  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.375  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.382  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$846c706a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.387  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$96002d20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.393  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:54.448  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:36:59.070  INFO 5278 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 11:37:00.075  WARN 5278 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:37:00.098  WARN 5278 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:37:00.225  WARN 5278 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 11:37:00.292  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.296  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.297  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.300  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.304  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.306  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.309  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.309  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$e305db8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.380  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.387  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.389  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.407  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2c906a32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:00.491  INFO 5278 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36ccd20d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 11:37:01.035  INFO 5278 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 11:37:01.062  INFO 5278 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 11:37:01.062  INFO 5278 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 11:37:01.171  INFO 5278 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 11:37:01.171  INFO 5278 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8741 ms
+2021-08-25 11:37:03.140  INFO 5278 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 11:37:03.324  INFO 5278 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 11:37:03.579  INFO 5278 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 11:37:03.996  INFO 5278 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 11:37:04.015  INFO 5278 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 11:37:04.016  INFO 5278 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 11:37:04.017  INFO 5278 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 11:37:04.018  INFO 5278 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 11:37:04.018  INFO 5278 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 11:37:04.018  INFO 5278 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 11:37:04.018  INFO 5278 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1c65bff7
+2021-08-25 11:37:04.038  INFO 5278 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 11:37:04.128  INFO 5278 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 11:37:04.150  INFO 5278 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 11:37:04.195  INFO 5278 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 11:37:04.311  INFO 5278 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 11:37:04.311  INFO 5278 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 11:37:04.387  INFO 5278 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 11:37:04.392  INFO 5278 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 12.899 seconds (JVM running for 21.509)
+2021-08-25 11:37:10.810  INFO 5278 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 11:37:10.811  INFO 5278 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 11:37:10.826  INFO 5278 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-08-25 11:37:11.321  INFO 5278 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:37:11.324  INFO 5278 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 0ce7fc84-ff3a-4495-92e7-405e5d0cb57d, md5 = 30E12B15B5D164297F10822F99F24833, out_trade_no = 8861484321081815421139
+2021-08-25 11:37:11.376  INFO 5278 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"0ce7fc84-ff3a-4495-92e7-405e5d0cb57d","signType":"md5","sign":"30E12B15B5D164297F10822F99F24833","resources":{"out_trade_no":"8861484321081815421139"}}, json = {"sign":"30E12B15B5D164297F10822F99F24833","resources":{"outTradeNo":"8861484321081815421139"},"signType":"md5","uuid":"0ce7fc84-ff3a-4495-92e7-405e5d0cb57d"}
+2021-08-25 11:37:12.363  INFO 5278 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"0bf74a56-f202-4fca-8303-0e0bb2eb8e3b","datetime":"2021-08-25T03:37:12Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 11:37:12.393  INFO 5278 --- [http-nio-8083-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"94d35d48-6a8c-462c-af69-7c035d2973d7","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:37:10
+ 调用结束时间: 2021-08-25 11:37:12
+ ------------------------------------------------
+2021-08-25 11:58:32.995  INFO 5278 --- [http-nio-8083-exec-5] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:58:32.995  INFO 5278 --- [http-nio-8083-exec-5] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 4e05d846-d2ed-4f60-9bc6-15dc6b6f25f3, md5 = 6B0B7FE9060E817AFD245760AF29DEEF, out_trade_no = 886148822104211523406742
+2021-08-25 11:58:32.997  INFO 5278 --- [http-nio-8083-exec-5] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"4e05d846-d2ed-4f60-9bc6-15dc6b6f25f3","signType":"md5","sign":"6B0B7FE9060E817AFD245760AF29DEEF","resources":{"out_trade_no":"886148822104211523406742"}}, json = {"sign":"6B0B7FE9060E817AFD245760AF29DEEF","resources":{"outTradeNo":"886148822104211523406742"},"signType":"md5","uuid":"4e05d846-d2ed-4f60-9bc6-15dc6b6f25f3"}
+2021-08-25 11:58:33.656  INFO 5278 --- [http-nio-8083-exec-5] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"b83861e9-1bc8-4e39-b4ba-faa91fce2658","datetime":"2021-08-25T03:58:33Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 11:58:33.660  INFO 5278 --- [http-nio-8083-exec-5] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"0b3463a6-f970-44d2-b577-fbf7de4f4105","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:58:31
+ 调用结束时间: 2021-08-25 11:58:33
+ ------------------------------------------------
+2021-08-25 11:58:53.035  INFO 5278 --- [http-nio-8083-exec-6] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 11:58:53.036  INFO 5278 --- [http-nio-8083-exec-6] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = ea20e00c-b102-4d47-bc0e-ba63c6a74252, md5 = EF6CB36D8D69BBE20C50FA6C4E6406F4, out_trade_no = 886148822104211523406742
+2021-08-25 11:58:53.037  INFO 5278 --- [http-nio-8083-exec-6] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"ea20e00c-b102-4d47-bc0e-ba63c6a74252","signType":"md5","sign":"EF6CB36D8D69BBE20C50FA6C4E6406F4","resources":{"out_trade_no":"886148822104211523406742"}}, json = {"sign":"EF6CB36D8D69BBE20C50FA6C4E6406F4","resources":{"outTradeNo":"886148822104211523406742"},"signType":"md5","uuid":"ea20e00c-b102-4d47-bc0e-ba63c6a74252"}
+2021-08-25 11:58:53.581  INFO 5278 --- [http-nio-8083-exec-6] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"c83a6893-9864-4a95-a4c8-798e1693ca2f","datetime":"2021-08-25T03:58:53Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 11:58:53.583  INFO 5278 --- [http-nio-8083-exec-6] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"401f401a-4654-409e-a012-0322e399c05e","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 11:58:53
+ 调用结束时间: 2021-08-25 11:58:53
+ ------------------------------------------------
+2021-08-25 13:59:21.184  INFO 5278 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 13:59:21.186  INFO 5278 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 13:59:21.187  INFO 5278 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 13:59:21.187  INFO 5278 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 13:59:21.187  INFO 5278 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 13:59:21.188  INFO 5278 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 13:59:21.190  INFO 5278 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 13:59:21.191  INFO 5278 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 13:59:21.208  INFO 5278 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 13:59:31.704  INFO 10731 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 10731 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 13:59:31.708  INFO 10731 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 13:59:31.781  INFO 10731 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 13:59:33.825  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:33.828  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$c6784940] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:33.915  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.153  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.155  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.158  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.160  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$fade1461] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.163  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.257  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.265  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$8549c01c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.273  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.275  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.277  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.286  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$a2537b1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.292  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$b3e737d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.299  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:34.368  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:38.644  INFO 10731 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 13:59:39.841  WARN 10731 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 13:59:39.865  WARN 10731 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 13:59:40.003  WARN 10731 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 13:59:40.085  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.089  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.090  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.093  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.097  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.100  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.102  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.103  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$ece640] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.169  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.178  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.179  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.201  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$4a7774e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.271  INFO 10731 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54b3dcc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 13:59:40.913  INFO 10731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 13:59:40.946  INFO 10731 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 13:59:40.946  INFO 10731 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 13:59:41.161  INFO 10731 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 13:59:41.162  INFO 10731 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9380 ms
+2021-08-25 13:59:44.104  INFO 10731 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 13:59:44.340  INFO 10731 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 13:59:44.688  INFO 10731 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 13:59:45.264  INFO 10731 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 13:59:45.288  INFO 10731 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 13:59:45.289  INFO 10731 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 13:59:45.290  INFO 10731 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 13:59:45.291  INFO 10731 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 13:59:45.291  INFO 10731 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 13:59:45.291  INFO 10731 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 13:59:45.292  INFO 10731 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6a322d8a
+2021-08-25 13:59:45.314  INFO 10731 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 13:59:45.428  INFO 10731 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 13:59:45.467  INFO 10731 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 13:59:45.546  INFO 10731 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 13:59:45.693  INFO 10731 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 13:59:45.694  INFO 10731 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 13:59:45.784  INFO 10731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 13:59:45.790  INFO 10731 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 15.084 seconds (JVM running for 24.272)
+2021-08-25 14:00:19.762  INFO 10731 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 14:00:19.764  INFO 10731 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 14:00:19.785  INFO 10731 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2021-08-25 14:00:20.450  INFO 10731 --- [http-nio-8083-exec-1] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 14:00:20.452  INFO 10731 --- [http-nio-8083-exec-1] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 17ddb23f-6766-4123-b8b6-d5a85f73425b, md5 = D1894260FD79C3B0267FB9CCEF227192, out_trade_no = 886148822104211523406742
+2021-08-25 14:00:20.500  INFO 10731 --- [http-nio-8083-exec-1] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"resources":{"outTradeNo":"886148822104211523406742"},"sign":"D1894260FD79C3B0267FB9CCEF227192","signType":"md5","uuid":"17ddb23f-6766-4123-b8b6-d5a85f73425b"}, json = {"sign":"D1894260FD79C3B0267FB9CCEF227192","resources":{"outTradeNo":"886148822104211523406742"},"signType":"md5","uuid":"17ddb23f-6766-4123-b8b6-d5a85f73425b"}, requestStringFromMapper = {"uuid":"17ddb23f-6766-4123-b8b6-d5a85f73425b","signType":"md5","sign":"D1894260FD79C3B0267FB9CCEF227192","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 14:00:56.020  INFO 10731 --- [http-nio-8083-exec-1] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"9a6c0351-f20f-486c-9313-f4c3f52a978a","datetime":"2021-08-25T06:00:56Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"SERVER ERROR"}
+2021-08-25 14:00:56.050  INFO 10731 --- [http-nio-8083-exec-1] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"3f4002da-776a-4647-a8f5-9a769abeeaf5","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 14:00:19
+ 调用结束时间: 2021-08-25 14:00:56
+ ------------------------------------------------
+2021-08-25 14:58:35.595  INFO 10731 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 14:58:35.597  INFO 10731 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 14:58:35.598  INFO 10731 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 14:58:35.598  INFO 10731 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 14:58:35.598  INFO 10731 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 14:58:35.599  INFO 10731 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 14:58:35.601  INFO 10731 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 14:58:35.603  INFO 10731 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 14:58:35.619  INFO 10731 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 14:58:45.975  INFO 12837 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 12837 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 14:58:45.979  INFO 12837 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 14:58:46.060  INFO 12837 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 14:58:48.080  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.084  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$e52df627] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.166  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.411  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.412  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.415  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.417  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$1993c148] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.419  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.511  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.518  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$a3ff6d03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.526  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.528  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.530  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.537  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$c1092806] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.543  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$d29ce4bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.550  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:48.609  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:53.060  INFO 12837 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 14:58:54.278  WARN 12837 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 14:58:54.300  WARN 12837 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 14:58:54.408  WARN 12837 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 14:58:54.473  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.478  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.479  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.482  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.487  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.489  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.492  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.492  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$1fa29327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.554  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.562  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.563  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.590  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$692d21ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:54.659  INFO 12837 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$736989a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 14:58:55.205  INFO 12837 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 14:58:55.234  INFO 12837 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 14:58:55.234  INFO 12837 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 14:58:55.360  INFO 12837 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 14:58:55.360  INFO 12837 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9300 ms
+2021-08-25 14:58:57.585  INFO 12837 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 14:58:57.776  INFO 12837 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 14:58:58.043  INFO 12837 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 14:58:58.509  INFO 12837 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 14:58:58.532  INFO 12837 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 14:58:58.532  INFO 12837 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 14:58:58.533  INFO 12837 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 14:58:58.535  INFO 12837 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 14:58:58.535  INFO 12837 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 14:58:58.535  INFO 12837 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 14:58:58.535  INFO 12837 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@649d310
+2021-08-25 14:58:58.557  INFO 12837 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 14:58:58.643  INFO 12837 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 14:58:58.664  INFO 12837 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 14:58:58.716  INFO 12837 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 14:58:58.836  INFO 12837 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 14:58:58.836  INFO 12837 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 14:58:58.912  INFO 12837 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 14:58:58.917  INFO 12837 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.93 seconds (JVM running for 22.986)
+2021-08-25 14:59:03.015  INFO 12837 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 14:59:03.018  INFO 12837 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 14:59:03.039  INFO 12837 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-08-25 14:59:03.510  INFO 12837 --- [http-nio-8083-exec-1] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 14:59:03.512  INFO 12837 --- [http-nio-8083-exec-1] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 5dce8054-0ab0-446f-8bbc-27eeaf26fb0d, md5 = 403A079A9D226B1C9F60BC657C86DABD, out_trade_no = 886148822104211523406742
+2021-08-25 14:59:03.535  INFO 12837 --- [http-nio-8083-exec-1] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"5dce8054-0ab0-446f-8bbc-27eeaf26fb0d","signType":"md5","sign":"403A079A9D226B1C9F60BC657C86DABD","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 14:59:40.222  INFO 12837 --- [http-nio-8083-exec-1] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"d9642a7b-b0cd-4033-b241-ed3e2de3927b","datetime":"2021-08-25T06:59:40Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 14:59:40.252  INFO 12837 --- [http-nio-8083-exec-1] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"2a5d9a50-5f51-43ed-95b8-af78128edeb7","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 14:59:03
+ 调用结束时间: 2021-08-25 14:59:40
+ ------------------------------------------------
+2021-08-25 15:01:47.868  INFO 12837 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 15:01:47.869  INFO 12837 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:01:47.870  INFO 12837 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 15:01:47.870  INFO 12837 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 15:01:47.871  INFO 12837 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 15:01:47.872  INFO 12837 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 15:01:47.873  INFO 12837 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:01:47.874  INFO 12837 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 15:01:47.925  INFO 12837 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 15:01:57.905  INFO 13034 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 13034 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 15:01:57.913  INFO 13034 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 15:01:57.980  INFO 13034 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 15:01:59.779  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:01:59.782  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$588be5f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:01:59.862  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.062  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.064  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.066  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.067  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$8cf1b118] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.070  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.154  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.162  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$175d5cd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.170  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.172  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.173  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.181  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$346717d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.185  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$45fad48c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.192  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:00.260  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:03.955  INFO 13034 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 15:02:05.046  WARN 13034 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 15:02:05.064  WARN 13034 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 15:02:05.162  WARN 13034 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 15:02:05.239  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.244  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.245  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.248  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.253  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.255  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.258  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.259  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$930082f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.351  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.362  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.363  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.401  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$dc8b119e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:05.487  INFO 13034 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6c77979] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:02:06.055  INFO 13034 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 15:02:06.088  INFO 13034 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 15:02:06.088  INFO 13034 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 15:02:06.225  INFO 13034 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 15:02:06.225  INFO 13034 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8245 ms
+2021-08-25 15:02:08.599  INFO 13034 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 15:02:08.823  INFO 13034 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 15:02:09.121  INFO 13034 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:02:09.591  INFO 13034 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 15:02:09.610  INFO 13034 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 15:02:09.610  INFO 13034 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 15:02:09.611  INFO 13034 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 15:02:09.613  INFO 13034 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 15:02:09.613  INFO 13034 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 15:02:09.613  INFO 13034 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 15:02:09.613  INFO 13034 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1d5a31cb
+2021-08-25 15:02:09.632  INFO 13034 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:02:09.744  INFO 13034 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 15:02:09.783  INFO 13034 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 15:02:09.833  INFO 13034 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 15:02:09.949  INFO 13034 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 15:02:09.950  INFO 13034 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 15:02:09.992  INFO 13034 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 15:02:09.997  INFO 13034 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.014 seconds (JVM running for 21.807)
+2021-08-25 15:02:11.813  INFO 13034 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 15:02:11.816  INFO 13034 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 15:02:11.838  INFO 13034 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2021-08-25 15:02:12.341  INFO 13034 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 15:02:12.343  INFO 13034 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 4d8c0b1b-d9f6-4492-96e8-7b69cffd653e, md5 = F97961F7821482587FED1825433F572E, out_trade_no = 886148822104211523406742
+2021-08-25 15:02:12.368  INFO 13034 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"4d8c0b1b-d9f6-4492-96e8-7b69cffd653e","signType":"md5","sign":"F97961F7821482587FED1825433F572E","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 15:02:12.602  INFO 13034 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"0358ef6f-34d4-4695-840c-b91f495199b9","datetime":"2021-08-25T07:02:12Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"Connection reset by peer; nested exception is java.io.IOException: Connection reset by peer"}
+2021-08-25 15:02:12.679  INFO 13034 --- [http-nio-8083-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"c840f61b-ea9e-429f-9abc-f80a193a5dc0","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 15:02:11
+ 调用结束时间: 2021-08-25 15:02:12
+ ------------------------------------------------
+2021-08-25 15:02:27.844  INFO 13034 --- [http-nio-8083-exec-3] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 15:02:27.845  INFO 13034 --- [http-nio-8083-exec-3] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = f03cd064-cdb1-44ae-9a3a-9315fb8a841a, md5 = D7999DA54055E8DD4A424A71FDA25CCA, out_trade_no = 886148822104211523406742
+2021-08-25 15:02:27.846  INFO 13034 --- [http-nio-8083-exec-3] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"f03cd064-cdb1-44ae-9a3a-9315fb8a841a","signType":"md5","sign":"D7999DA54055E8DD4A424A71FDA25CCA","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 15:02:34.933  INFO 13034 --- [http-nio-8083-exec-3] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"3b83498f-d7ed-4b9e-bf81-97bb0f09a35d","datetime":"2021-08-25T07:02:34Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 7000ms in 'flatMap' (and no fallback has been configured)"}
+2021-08-25 15:02:34.949  INFO 13034 --- [http-nio-8083-exec-3] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"3263517f-85c1-4a1a-afe3-a53b0a8833e3","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 15:02:27
+ 调用结束时间: 2021-08-25 15:02:34
+ ------------------------------------------------
+2021-08-25 15:02:48.373  INFO 13034 --- [http-nio-8083-exec-4] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf
+2021-08-25 15:02:48.374  INFO 13034 --- [http-nio-8083-exec-4] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = da2730ad-181a-4d43-b1cc-79abac0eefa5, md5 = 70571B4531375BFEFF3287E560BF0C94, out_trade_no = 886148822104211523406742
+2021-08-25 15:02:48.375  INFO 13034 --- [http-nio-8083-exec-4] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"da2730ad-181a-4d43-b1cc-79abac0eefa5","signType":"md5","sign":"70571B4531375BFEFF3287E560BF0C94","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 15:02:48.972  INFO 13034 --- [http-nio-8083-exec-4] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"9956ebaf-8c4d-4563-89ef-31a752fb558f","datetime":"2021-08-25T07:02:48Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 15:02:48.982  INFO 13034 --- [http-nio-8083-exec-4] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"2a4a18c9-109b-4cc6-871b-bbdfa2cda564","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 15:02:48
+ 调用结束时间: 2021-08-25 15:02:48
+ ------------------------------------------------
+2021-08-25 15:36:17.201  INFO 13034 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 15:36:17.203  INFO 13034 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:36:17.204  INFO 13034 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 15:36:17.204  INFO 13034 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 15:36:17.204  INFO 13034 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 15:36:17.206  INFO 13034 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 15:36:17.208  INFO 13034 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:36:17.210  INFO 13034 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 15:36:17.229  INFO 13034 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-08-25 15:36:27.241  INFO 14465 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 14465 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-08-25 15:36:27.245  INFO 14465 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-08-25 15:36:27.294  INFO 14465 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 15:36:28.817  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:28.820  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$d7ae2fef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:28.898  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.082  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.083  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.085  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.087  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$c13fb10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.089  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.158  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.163  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$967fa6cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.171  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.172  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.173  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.179  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b38961ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.184  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$c51d1e84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.190  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:29.239  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:34.255  INFO 14465 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-08-25 15:36:35.182  WARN 14465 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 15:36:35.195  WARN 14465 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 15:36:35.264  WARN 14465 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-08-25 15:36:35.320  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.324  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.325  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.327  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.331  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.333  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.336  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.336  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$1222ccef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.391  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.398  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.399  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.418  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$5bad5b96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.471  INFO 14465 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65e9c371] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-25 15:36:35.988  INFO 14465 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2021-08-25 15:36:36.018  INFO 14465 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-25 15:36:36.018  INFO 14465 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-08-25 15:36:36.121  INFO 14465 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-25 15:36:36.122  INFO 14465 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8827 ms
+2021-08-25 15:36:38.118  INFO 14465 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-08-25 15:36:38.273  INFO 14465 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-25 15:36:38.500  INFO 14465 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:36:38.867  INFO 14465 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-08-25 15:36:38.887  INFO 14465 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-08-25 15:36:38.887  INFO 14465 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-08-25 15:36:38.888  INFO 14465 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-08-25 15:36:38.890  INFO 14465 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-08-25 15:36:38.890  INFO 14465 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-08-25 15:36:38.890  INFO 14465 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-08-25 15:36:38.890  INFO 14465 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7d546ff8
+2021-08-25 15:36:38.908  INFO 14465 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:36:38.989  INFO 14465 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-08-25 15:36:39.016  INFO 14465 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-08-25 15:36:39.057  INFO 14465 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-08-25 15:36:39.166  INFO 14465 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-08-25 15:36:39.167  INFO 14465 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-08-25 15:36:39.211  INFO 14465 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2021-08-25 15:36:39.215  INFO 14465 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 12.867 seconds (JVM running for 21.686)
+2021-08-25 15:37:32.125  INFO 14465 --- [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 15:37:32.127  INFO 14465 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-25 15:37:32.146  INFO 14465 --- [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2021-08-25 15:37:32.563  INFO 14465 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf, merchantMethodId = b3137e1f-a016-4b11-b428-96c5503a3ecf
+2021-08-25 15:37:32.565  INFO 14465 --- [http-nio-8083-exec-2] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 0840847b-0041-428e-9a0e-a1ec90c66c24, md5 = 6FBD2418C27054D8ACC3F47B44DBE4F7, out_trade_no = 886148822104211523406742
+2021-08-25 15:37:32.588  INFO 14465 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"0840847b-0041-428e-9a0e-a1ec90c66c24","signType":"md5","sign":"6FBD2418C27054D8ACC3F47B44DBE4F7","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 15:37:50.516  INFO 14465 --- [http-nio-8083-exec-2] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"35fcfe0d-f845-4fae-ab6c-9070654bb0e2","datetime":"2021-08-25T07:37:50Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 15:37:50.558  INFO 14465 --- [http-nio-8083-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"b7ad4a08-c2a0-4acc-a10b-4854b8988e8e","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 15:37:32
+ 调用结束时间: 2021-08-25 15:37:50
+ ------------------------------------------------
+2021-08-25 15:50:30.914  INFO 14465 --- [http-nio-8083-exec-5] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf, merchantMethodId = b3137e1f-a016-4b11-b428-96c5503a3ecf
+2021-08-25 15:50:30.914  INFO 14465 --- [http-nio-8083-exec-5] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 27ffc836-0bbe-46b1-ab0d-d74a19ce071a, md5 = A178422864BE3E7A74333A9B552D47EE, out_trade_no = 886148822104211523406742
+2021-08-25 15:50:30.916  INFO 14465 --- [http-nio-8083-exec-5] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"27ffc836-0bbe-46b1-ab0d-d74a19ce071a","signType":"md5","sign":"A178422864BE3E7A74333A9B552D47EE","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 15:50:33.455  INFO 14465 --- [http-nio-8083-exec-5] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"2ada5b4f-a264-4c5a-b1cc-04fd46a70f84","datetime":"2021-08-25T07:50:33Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 15:50:33.467  INFO 14465 --- [http-nio-8083-exec-5] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"9315f785-2ff6-4a4d-9d1b-1770dfcdfad7","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 15:50:30
+ 调用结束时间: 2021-08-25 15:50:33
+ ------------------------------------------------
+2021-08-25 16:23:36.053  INFO 14465 --- [http-nio-8083-exec-8] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf, merchantMethodId = b3137e1f-a016-4b11-b428-96c5503a3ecf
+2021-08-25 16:23:36.054  INFO 14465 --- [http-nio-8083-exec-8] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 788cb35f-38f6-4d7d-949f-044570ca0193, md5 = 416A3D26DED9F53F18440923A59F670C, out_trade_no = 886148822104211523406742
+2021-08-25 16:23:36.055  INFO 14465 --- [http-nio-8083-exec-8] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"788cb35f-38f6-4d7d-949f-044570ca0193","signType":"md5","sign":"416A3D26DED9F53F18440923A59F670C","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 16:24:13.202  INFO 14465 --- [http-nio-8083-exec-8] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"f7fc096d-0623-469d-86c8-db7d44e9100a","datetime":"2021-08-25T08:24:13Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 7000ms in 'flatMap' (and no fallback has been configured)"}
+2021-08-25 16:24:13.218  INFO 14465 --- [http-nio-8083-exec-8] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"6338ac6d-c2e9-4623-a65e-6e5371fdd67a","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 16:23:34
+ 调用结束时间: 2021-08-25 16:24:13
+ ------------------------------------------------
+2021-08-25 16:35:10.201  INFO 14465 --- [http-nio-8083-exec-11] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf, merchantMethodId = b3137e1f-a016-4b11-b428-96c5503a3ecf
+2021-08-25 16:35:10.201  INFO 14465 --- [http-nio-8083-exec-11] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = cb8bc3dc-58d9-487a-9393-741254595e26, md5 = 2BF3429646581B1F0A4CAFF9C7D75565, out_trade_no = 886148822104211523406742
+2021-08-25 16:35:10.203  INFO 14465 --- [http-nio-8083-exec-11] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"cb8bc3dc-58d9-487a-9393-741254595e26","signType":"md5","sign":"2BF3429646581B1F0A4CAFF9C7D75565","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 16:35:17.282  INFO 14465 --- [http-nio-8083-exec-11] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"d9906f9f-4800-4a2f-9b6a-bf1b3fcbbd62","datetime":"2021-08-25T08:35:17Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 7000ms in 'flatMap' (and no fallback has been configured)"}
+2021-08-25 16:35:17.306  INFO 14465 --- [http-nio-8083-exec-11] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"d1367a10-d02b-4791-b6bb-b5ec04495175","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 16:35:10
+ 调用结束时间: 2021-08-25 16:35:17
+ ------------------------------------------------
+2021-08-25 16:36:06.685  INFO 14465 --- [http-nio-8083-exec-14] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf, merchantMethodId = b3137e1f-a016-4b11-b428-96c5503a3ecf
+2021-08-25 16:36:06.686  INFO 14465 --- [http-nio-8083-exec-14] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = a7fd300c-6be5-4606-af34-9304b38cea70, md5 = 2C9B0FCAD33FD4FB4D40322B76E7E99E, out_trade_no = 886148822104211523406742
+2021-08-25 16:36:06.687  INFO 14465 --- [http-nio-8083-exec-14] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"a7fd300c-6be5-4606-af34-9304b38cea70","signType":"md5","sign":"2C9B0FCAD33FD4FB4D40322B76E7E99E","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 16:36:07.259  INFO 14465 --- [http-nio-8083-exec-14] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"f008ebe0-621e-4ce0-9e5f-c42f3a39ff11","datetime":"2021-08-25T08:36:07Z+0000","returnCode":"-216","returnDesc":"Failed to order wechat","suppleDesc":"订单不存在"}
+2021-08-25 16:36:07.268  INFO 14465 --- [http-nio-8083-exec-14] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"c736f283-eeae-4a42-b71d-769d1c696588","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 16:36:06
+ 调用结束时间: 2021-08-25 16:36:07
+ ------------------------------------------------
+2021-08-25 17:10:29.615  INFO 14465 --- [http-nio-8083-exec-17] c.s.g.m.p.s.impl.MsWechatServiceImpl     : merchantCode = cmhkeshop, merchantKey = wqe9tgxt54jq89hf, merchantMethodId = b3137e1f-a016-4b11-b428-96c5503a3ecf
+2021-08-25 17:10:29.615  INFO 14465 --- [http-nio-8083-exec-17] c.s.g.m.p.s.impl.MsWechatServiceImpl     : uuid = 703a4276-b363-46a4-8014-d567945bc711, md5 = 19C8A7EAD34F30339F45D0B17BD9EEE4, out_trade_no = 886148822104211523406742
+2021-08-25 17:10:29.616  INFO 14465 --- [http-nio-8083-exec-17] c.s.g.m.payment.access.MsWechatAccess    : url = http://localhost:8082/api/wechatv3/cmhkeshop/transaction/check, requestString = {"uuid":"703a4276-b363-46a4-8014-d567945bc711","signType":"md5","sign":"19C8A7EAD34F30339F45D0B17BD9EEE4","resources":{"out_trade_no":"886148822104211523406742"}}
+2021-08-25 17:10:56.892  INFO 14465 --- [http-nio-8083-exec-17] c.s.g.m.payment.access.MsWechatAccess    : resultStr = {"uuid":"6b3d0042-a44c-467d-ab1a-6c9fddbb0366","datetime":"2021-08-25T09:10:56Z+0000","returnCode":"-500","returnDesc":"SERVER ERROR","suppleDesc":"java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 7000ms in 'flatMap' (and no fallback has been configured)"}
+2021-08-25 17:10:56.907  INFO 14465 --- [http-nio-8083-exec-17] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "886148822104211523406742",    "merchantCode": "cmhkeshop",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"d7bdd05d-8bd4-4b5c-a4b3-5d11ce7ce6e4","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-08-25 17:10:28
+ 调用结束时间: 2021-08-25 17:10:56
+ ------------------------------------------------
+2021-08-25 18:01:26.343  INFO 14465 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 18:01:26.345  INFO 14465 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-08-25 18:01:26.346  INFO 14465 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-08-25 18:01:26.346  INFO 14465 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-08-25 18:01:26.346  INFO 14465 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-08-25 18:01:26.347  INFO 14465 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-08-25 18:01:26.349  INFO 14465 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 18:01:26.351  INFO 14465 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-08-25 18:01:26.371  INFO 14465 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

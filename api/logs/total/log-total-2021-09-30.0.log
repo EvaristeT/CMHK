@@ -1,0 +1,1614 @@
+2021-09-30 09:27:54.368  INFO 2092 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 2092 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-09-30 09:27:54.371  INFO 2092 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-09-30 09:27:54.426  INFO 2092 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-30 09:27:56.256  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.259  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$61240762] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.378  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.664  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.665  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.668  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.670  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$9589d283] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.673  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.766  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.772  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$1ff57e3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.779  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.781  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.782  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.788  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$3cff3941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.793  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$4e92f5f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.798  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:27:56.860  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:01.658  INFO 2092 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-30 09:28:02.661  WARN 2092 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 09:28:02.677  WARN 2092 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 09:28:02.767  WARN 2092 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 09:28:02.828  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.832  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.833  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.837  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.841  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.843  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.846  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.846  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$9b98a462] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.903  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.910  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.911  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.933  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$e5233309] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:02.995  INFO 2092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef5f9ae4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:28:03.599  INFO 2092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-09-30 09:28:03.628  INFO 2092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-30 09:28:03.629  INFO 2092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-09-30 09:28:03.750  INFO 2092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-30 09:28:03.750  INFO 2092 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9324 ms
+2021-09-30 09:28:05.828  INFO 2092 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-09-30 09:28:06.032  INFO 2092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-09-30 09:28:06.291  INFO 2092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-30 09:28:06.743  INFO 2092 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-09-30 09:28:06.765  INFO 2092 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-30 09:28:06.765  INFO 2092 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-09-30 09:28:06.767  INFO 2092 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-09-30 09:28:06.768  INFO 2092 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-30 09:28:06.768  INFO 2092 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-30 09:28:06.768  INFO 2092 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-09-30 09:28:06.768  INFO 2092 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@cb28ff2
+2021-09-30 09:28:06.789  INFO 2092 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-09-30 09:28:06.886  INFO 2092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-30 09:28:06.918  INFO 2092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-30 09:28:06.971  INFO 2092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-30 09:28:07.097  INFO 2092 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-09-30 09:28:07.097  INFO 2092 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-30 09:28:07.159  INFO 2092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-09-30 09:28:07.164  INFO 2092 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.875 seconds (JVM running for 22.98)
+2021-09-30 09:28:23.346  INFO 2092 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 09:28:23.349  INFO 2092 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-30 09:28:23.376  INFO 2092 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2021-09-30 09:28:23.439  WARN 2092 --- [http-nio-80-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:28.605  WARN 2092 --- [http-nio-80-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:33.636  WARN 2092 --- [http-nio-80-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:38.665  WARN 2092 --- [http-nio-80-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:43.685  WARN 2092 --- [http-nio-80-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:48.708  WARN 2092 --- [http-nio-80-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:53.737  WARN 2092 --- [http-nio-80-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:28:58.757  WARN 2092 --- [http-nio-80-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:29:03.775  WARN 2092 --- [http-nio-80-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:29:05.959  INFO 2092 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 09:29:05.961  INFO 2092 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-09-30 09:29:05.963  INFO 2092 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-09-30 09:29:05.963  INFO 2092 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-09-30 09:29:05.964  INFO 2092 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 09:29:05.966  INFO 2092 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-09-30 09:29:05.968  INFO 2092 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-30 09:29:05.969  INFO 2092 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-09-30 09:29:06.027  INFO 2092 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-30 09:29:46.782  INFO 2233 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 2233 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-09-30 09:29:46.788  INFO 2233 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-09-30 09:29:46.844  INFO 2233 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-30 09:29:48.537  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.541  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$4be26a24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.619  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.827  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.829  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.831  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.833  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$80483545] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.835  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.912  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.919  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$ab3e100] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.926  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.927  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.929  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.936  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$27bd9c03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.941  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$395158b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:48.948  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:49.006  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:54.596  INFO 2233 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-30 09:29:55.587  WARN 2233 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 09:29:55.599  WARN 2233 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 09:29:55.686  WARN 2233 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 09:29:55.748  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.751  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.752  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.755  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.759  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.762  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.764  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.765  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$86570724] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.827  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.833  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.834  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.855  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$cfe195cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:55.920  INFO 2233 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da1dfda6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 09:29:56.415  INFO 2233 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-09-30 09:29:56.441  INFO 2233 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-30 09:29:56.442  INFO 2233 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-09-30 09:29:56.552  INFO 2233 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-30 09:29:56.552  INFO 2233 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9708 ms
+2021-09-30 09:29:57.027 ERROR 2233 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-09-30 09:29:57.031 ERROR 2233 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数
+2021-09-30 09:29:58.615  INFO 2233 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-09-30 09:29:58.815  INFO 2233 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-09-30 09:29:59.083  INFO 2233 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-30 09:29:59.562  INFO 2233 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-09-30 09:29:59.582  INFO 2233 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-30 09:29:59.582  INFO 2233 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-09-30 09:29:59.583  INFO 2233 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-09-30 09:29:59.584  INFO 2233 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-30 09:29:59.585  INFO 2233 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-30 09:29:59.585  INFO 2233 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-09-30 09:29:59.585  INFO 2233 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@555deacb
+2021-09-30 09:29:59.606  INFO 2233 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-09-30 09:29:59.714  INFO 2233 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-30 09:29:59.740  INFO 2233 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-30 09:29:59.797  INFO 2233 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-30 09:29:59.929  INFO 2233 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-09-30 09:29:59.929  INFO 2233 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-30 09:29:59.983  INFO 2233 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-09-30 09:29:59.989  INFO 2233 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 14.138 seconds (JVM running for 22.643)
+2021-09-30 09:30:07.391  INFO 2233 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 09:30:07.392  INFO 2233 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-30 09:30:07.409  INFO 2233 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-09-30 09:30:07.453  WARN 2233 --- [http-nio-80-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:30:12.589  WARN 2233 --- [http-nio-80-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:30:17.622  WARN 2233 --- [http-nio-80-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:30:22.646  WARN 2233 --- [http-nio-80-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:30:27.667  WARN 2233 --- [http-nio-80-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:30:32.686  WARN 2233 --- [http-nio-80-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /nginx_status
+2021-09-30 09:30:33.047  INFO 2233 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 09:30:33.050  INFO 2233 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-09-30 09:30:33.052  INFO 2233 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-09-30 09:30:33.052  INFO 2233 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-09-30 09:30:33.052  INFO 2233 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 09:30:33.054  INFO 2233 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-09-30 09:30:33.055  INFO 2233 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-30 09:30:33.057  INFO 2233 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-09-30 09:30:33.105  INFO 2233 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-30 14:32:38.950  INFO 9449 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 9449 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-09-30 14:32:38.954  INFO 9449 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-09-30 14:32:39.005  INFO 9449 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-30 14:32:40.690  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:40.692  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$b5b0d8b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:40.769  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.022  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.025  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.029  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.031  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$ea16a3d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.034  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.129  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.141  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$74824f91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.160  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.175  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.195  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.202  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$918c0a94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.219  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$a31fc74a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.241  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:41.292  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:46.204  INFO 9449 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-30 14:32:47.318  WARN 9449 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 14:32:47.333  WARN 9449 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 14:32:47.459  WARN 9449 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 14:32:47.548  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.553  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.568  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.571  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.576  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.578  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.580  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.581  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$f02575b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.638  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.644  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.645  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.673  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$39b0045c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:47.726  INFO 9449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43ec6c37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 14:32:48.246  INFO 9449 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-30 14:32:48.273  INFO 9449 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-30 14:32:48.273  INFO 9449 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-09-30 14:32:48.382  INFO 9449 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-30 14:32:48.383  INFO 9449 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9377 ms
+2021-09-30 14:32:48.856 ERROR 9449 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-09-30 14:32:48.859 ERROR 9449 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数
+2021-09-30 14:32:50.446  INFO 9449 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-09-30 14:32:50.652  INFO 9449 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-09-30 14:32:50.895  INFO 9449 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-30 14:32:51.303  INFO 9449 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-09-30 14:32:51.320  INFO 9449 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-30 14:32:51.321  INFO 9449 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-09-30 14:32:51.322  INFO 9449 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-09-30 14:32:51.323  INFO 9449 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-30 14:32:51.323  INFO 9449 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-30 14:32:51.323  INFO 9449 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-09-30 14:32:51.323  INFO 9449 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@36867025
+2021-09-30 14:32:51.343  INFO 9449 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-09-30 14:32:51.424  INFO 9449 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-30 14:32:51.449  INFO 9449 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-30 14:32:51.517  INFO 9449 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-30 14:32:51.663  INFO 9449 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-09-30 14:32:51.664  INFO 9449 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-30 14:32:51.726  INFO 9449 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-30 14:32:51.731  INFO 9449 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.66 seconds (JVM running for 22.369)
+2021-09-30 14:32:53.271  INFO 9449 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 14:32:53.274  INFO 9449 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-30 14:32:53.292  INFO 9449 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2021-09-30 14:32:54.173  INFO 9449 --- [http-nio-8080-exec-2] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321082615428571","updatePayMethod":"owr"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:233ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:32:54.237  INFO 9449 --- [http-nio-8080-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveWXpayOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 239306E72A44D63D6E5ABEDAFB9DF774
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321082615428571",    "orderPrice": 1,    "productPrice": 1,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=s&trade_no=HE12241645",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "239306E72A44D63D6E5ABEDAFB9DF774",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "methodCode": "NATIVE",    "productList": [],    "paymentType": "1",    "paymentMethod": ""}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"239306E72A44D63D6E5ABEDAFB9DF774","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 14:32:53
+ 调用结束时间: 2021-09-30 14:32:54
+ ------------------------------------------------
+2021-09-30 14:33:57.072  INFO 9449 --- [http-nio-8080-exec-5] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240739","updatePayMethod":"owr"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"wcr21093016240740","orderNum":"2109301016734656","returnDesc":"更改成功","checkCode":"KX16814036"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:775ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:33:57.204  INFO 9449 --- [http-nio-8080-exec-5] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveWXpayOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 239306E72A44D63D6E5ABEDAFB9DF774
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240739",    "orderPrice": 1,    "productPrice": 1,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=s&trade_no=HE12241645",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "239306E72A44D63D6E5ABEDAFB9DF774",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "methodCode": "NATIVE",    "productList": [],    "paymentType": "1",    "paymentMethod": ""}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 14:33:56
+ 调用结束时间: 2021-09-30 14:33:57
+ ------------------------------------------------
+2021-09-30 14:33:57.211 ERROR 9449 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: Cannot find implementation for com.stylefeng.guns.modular.payment.corvert.WXAPPOrderRequestCorvertMapper
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:93)
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:76)
+	at com.stylefeng.guns.modular.payment.corvert.WXAPPOrderRequestCorvertMapper.<clinit>(WXAPPOrderRequestCorvertMapper.java:23)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.orderWechat(SaveWechatOrderStrategy.java:183)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.saveNativeWXOrder(SaveWechatOrderStrategy.java:133)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.generatePayParams(SaveWechatOrderStrategy.java:86)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveWXPayOrder(PaymentWebOrderServiceImpl.java:69)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$b38506f9.saveWXPayOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveWXOrderWeb(PaymentController.java:244)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$29b58047.saveWXOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 14:34:55.554  INFO 9449 --- [http-nio-8080-exec-7] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240739","updatePayMethod":"owr"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:158ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:34:55.578  INFO 9449 --- [http-nio-8080-exec-7] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveWXpayOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 239306E72A44D63D6E5ABEDAFB9DF774
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240739",    "orderPrice": 1,    "productPrice": 1,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=s&trade_no=HE12241645",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "239306E72A44D63D6E5ABEDAFB9DF774",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "methodCode": "NATIVE",    "productList": [],    "paymentType": "1",    "paymentMethod": ""}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"239306E72A44D63D6E5ABEDAFB9DF774","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 14:34:55
+ 调用结束时间: 2021-09-30 14:34:55
+ ------------------------------------------------
+2021-09-30 14:35:27.529  INFO 9449 --- [http-nio-8080-exec-10] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240741","updatePayMethod":"owr"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"wcr21093016240742","orderNum":"2109301016734657","returnDesc":"更改成功","checkCode":"TW16814037"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:294ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:35:27.759  INFO 9449 --- [http-nio-8080-exec-10] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveWXpayOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 239306E72A44D63D6E5ABEDAFB9DF774
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240741",    "orderPrice": 1,    "productPrice": 1,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=s&trade_no=HE12241645",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "239306E72A44D63D6E5ABEDAFB9DF774",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "methodCode": "NATIVE",    "productList": [],    "paymentType": "1",    "paymentMethod": ""}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 14:35:27
+ 调用结束时间: 2021-09-30 14:35:27
+ ------------------------------------------------
+2021-09-30 14:35:27.761 ERROR 9449 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.WXAPPOrderRequestCorvertMapper] with root cause
+
+java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.WXAPPOrderRequestCorvertMapper
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.orderWechat(SaveWechatOrderStrategy.java:183)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.saveNativeWXOrder(SaveWechatOrderStrategy.java:133)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.generatePayParams(SaveWechatOrderStrategy.java:86)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveWXPayOrder(PaymentWebOrderServiceImpl.java:69)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$b38506f9.saveWXPayOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveWXOrderWeb(PaymentController.java:244)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$29b58047.saveWXOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 14:57:48.968  INFO 9449 --- [http-nio-8080-exec-12] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"wcr21093016240753","updatePayMethod":"owr"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"wcr21093016240754","orderNum":"2109301016734858","returnDesc":"更改成功","checkCode":"UM16814045"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:269ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:57:49.028  INFO 9449 --- [http-nio-8080-exec-12] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveWXpayOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 2AECF6E50D79CC9FA01E1A46B27A9E38
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240752",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=GR16814042",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "2AECF6E50D79CC9FA01E1A46B27A9E38",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "MWEB",    "productList": [],    "paymentType": "1",    "paymentMethod": ""}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 14:57:47
+ 调用结束时间: 2021-09-30 14:57:49
+ ------------------------------------------------
+2021-09-30 14:57:49.029 ERROR 9449 --- [http-nio-8080-exec-12] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.WXAPPOrderRequestCorvertMapper] with root cause
+
+java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.WXAPPOrderRequestCorvertMapper
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.orderWechat(SaveWechatOrderStrategy.java:183)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.saveMwebWXOrder(SaveWechatOrderStrategy.java:162)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveWechatOrderStrategy.generatePayParams(SaveWechatOrderStrategy.java:89)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveWXPayOrder(PaymentWebOrderServiceImpl.java:69)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$b38506f9.saveWXPayOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveWXOrderWeb(PaymentController.java:244)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$29b58047.saveWXOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 14:58:35.292  INFO 9449 --- [http-nio-8080-exec-13] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"wcr21093016240753","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:168ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:58:35.312  INFO 9449 --- [http-nio-8080-exec-13] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 3D27C775F41E7B6B6DB4D068E4CF9BCB
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240752",    "orderPrice": 1,    "productPrice": 1,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=s&trade_no=HE12241645",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "3D27C775F41E7B6B6DB4D068E4CF9BCB",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/handsets/handsets-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"3D27C775F41E7B6B6DB4D068E4CF9BCB","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 14:58:34
+ 调用结束时间: 2021-09-30 14:58:35
+ ------------------------------------------------
+2021-09-30 14:59:22.172  INFO 9449 --- [http-nio-8080-exec-17] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"wcr21093016240753","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:164ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 14:59:22.201  INFO 9449 --- [http-nio-8080-exec-17] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: DE1F419A2DBBBB6BD04A41F93BA77298
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240752",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=UM16814045",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "DE1F419A2DBBBB6BD04A41F93BA77298",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"DE1F419A2DBBBB6BD04A41F93BA77298","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 14:59:21
+ 调用结束时间: 2021-09-30 14:59:22
+ ------------------------------------------------
+2021-09-30 15:03:25.459  INFO 9449 --- [http-nio-8080-exec-19] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240756","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"ahk21093016240757","orderNum":"2109301016734860","returnDesc":"更改成功","checkCode":"VY16814047"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:381ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:03:25.571  INFO 9449 --- [http-nio-8080-exec-19] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: DE1F419A2DBBBB6BD04A41F93BA77298
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240756",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=UM16814045",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "DE1F419A2DBBBB6BD04A41F93BA77298",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 15:03:24
+ 调用结束时间: 2021-09-30 15:03:25
+ ------------------------------------------------
+2021-09-30 15:03:25.571 ERROR 9449 --- [http-nio-8080-exec-19] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: Cannot find implementation for com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:93)
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:76)
+	at com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper.<clinit>(AliPayHKResponseCervertMapper.java:22)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.qrCodeType(SaveAliPayHKOrderStrategy.java:95)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.generatePayParams(SaveAliPayHKOrderStrategy.java:83)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveAliPayHKOrder(PaymentWebOrderServiceImpl.java:57)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$b38506f9.saveAliPayHKOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveAliPayHKOrderWeb(PaymentController.java:260)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$29b58047.saveAliPayHKOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 15:03:35.364  INFO 9449 --- [http-nio-8080-exec-22] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240756","updatePayMethod":"owr"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:198ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:03:35.397  INFO 9449 --- [http-nio-8080-exec-22] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveWXpayOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 2AECF6E50D79CC9FA01E1A46B27A9E38
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240756",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=GR16814042",    "merchantMethodId": "b3137e1f-a016-4b11-b428-96c5503a3ecf",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "2AECF6E50D79CC9FA01E1A46B27A9E38",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "MWEB",    "productList": [],    "paymentType": "1",    "paymentMethod": ""}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"2AECF6E50D79CC9FA01E1A46B27A9E38","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 15:03:35
+ 调用结束时间: 2021-09-30 15:03:35
+ ------------------------------------------------
+2021-09-30 15:05:29.173  INFO 9449 --- [http-nio-8080-exec-25] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"ahk21093016240759","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"ahk21093016240760","orderNum":"2109301016734861","returnDesc":"更改成功","checkCode":"TS16814048"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:321ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:05:29.239  INFO 9449 --- [http-nio-8080-exec-25] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 8B20E09B93EFDE3CF419FD2AAB64A8E4
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240758",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=TS16814048",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "8B20E09B93EFDE3CF419FD2AAB64A8E4",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 15:05:28
+ 调用结束时间: 2021-09-30 15:05:29
+ ------------------------------------------------
+2021-09-30 15:05:29.240 ERROR 9449 --- [http-nio-8080-exec-25] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper] with root cause
+
+java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.qrCodeType(SaveAliPayHKOrderStrategy.java:95)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.generatePayParams(SaveAliPayHKOrderStrategy.java:83)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveAliPayHKOrder(PaymentWebOrderServiceImpl.java:57)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$b38506f9.saveAliPayHKOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveAliPayHKOrderWeb(PaymentController.java:260)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$29b58047.saveAliPayHKOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 15:07:54.886  INFO 9449 --- [http-nio-8080-exec-27] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"ahk21093016240759","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:164ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:07:54.904  INFO 9449 --- [http-nio-8080-exec-27] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 8B20E09B93EFDE3CF419FD2AAB64A8E4
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240758",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=TS16814048",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "8B20E09B93EFDE3CF419FD2AAB64A8E4",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"8B20E09B93EFDE3CF419FD2AAB64A8E4","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 15:07:54
+ 调用结束时间: 2021-09-30 15:07:54
+ ------------------------------------------------
+2021-09-30 15:09:54.452  INFO 9449 --- [http-nio-8080-exec-30] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240763","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"ahk21093016240764","orderNum":"2109301016734863","returnDesc":"更改成功","checkCode":"NY16814050"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:344ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:09:54.511  INFO 9449 --- [http-nio-8080-exec-30] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 8B20E09B93EFDE3CF419FD2AAB64A8E4
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240763",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=TS16814048",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "8B20E09B93EFDE3CF419FD2AAB64A8E4",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 15:09:53
+ 调用结束时间: 2021-09-30 15:09:54
+ ------------------------------------------------
+2021-09-30 15:09:54.513 ERROR 9449 --- [http-nio-8080-exec-30] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper] with root cause
+
+java.lang.NoClassDefFoundError: Could not initialize class com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.qrCodeType(SaveAliPayHKOrderStrategy.java:95)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.generatePayParams(SaveAliPayHKOrderStrategy.java:83)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveAliPayHKOrder(PaymentWebOrderServiceImpl.java:57)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$b38506f9.saveAliPayHKOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveAliPayHKOrderWeb(PaymentController.java:260)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$29b58047.saveAliPayHKOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 15:12:05.045  INFO 9449 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 15:12:05.048  INFO 9449 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-09-30 15:12:05.049  INFO 9449 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-09-30 15:12:05.049  INFO 9449 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-09-30 15:12:05.049  INFO 9449 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 15:12:05.050  INFO 9449 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-09-30 15:12:05.051  INFO 9449 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-30 15:12:05.053  INFO 9449 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-09-30 15:12:05.068  INFO 9449 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-30 15:15:04.394  INFO 11160 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 11160 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-09-30 15:15:04.399  INFO 11160 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-09-30 15:15:04.454  INFO 11160 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-30 15:15:06.137  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.140  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$5741b5f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.210  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.412  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.413  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.416  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.417  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$8ba78116] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.420  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.506  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.514  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$16132cd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.521  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.522  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.524  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.532  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$331ce7d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.537  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$44b0a48a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.543  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:06.607  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:12.228  INFO 11160 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-30 15:15:13.232  WARN 11160 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 15:15:13.249  WARN 11160 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 15:15:13.354  WARN 11160 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 15:15:13.427  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.431  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.432  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.435  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.439  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.440  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.443  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.444  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$91b652f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.516  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.524  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.525  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.545  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$db40e19c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:13.613  INFO 11160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e57d4977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:15:14.165  INFO 11160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-30 15:15:14.197  INFO 11160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-30 15:15:14.197  INFO 11160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-09-30 15:15:14.318  INFO 11160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-30 15:15:14.319  INFO 11160 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9865 ms
+2021-09-30 15:15:14.814 ERROR 11160 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-09-30 15:15:14.816 ERROR 11160 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数
+2021-09-30 15:15:16.535  INFO 11160 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-09-30 15:15:16.716  INFO 11160 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-09-30 15:15:16.982  INFO 11160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-30 15:15:17.415  INFO 11160 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-09-30 15:15:17.434  INFO 11160 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-30 15:15:17.435  INFO 11160 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-09-30 15:15:17.436  INFO 11160 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-09-30 15:15:17.437  INFO 11160 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-30 15:15:17.437  INFO 11160 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-30 15:15:17.437  INFO 11160 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-09-30 15:15:17.437  INFO 11160 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c61ab8f
+2021-09-30 15:15:17.458  INFO 11160 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-09-30 15:15:17.552  INFO 11160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-30 15:15:17.577  INFO 11160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-30 15:15:17.628  INFO 11160 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-30 15:15:17.740  INFO 11160 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-09-30 15:15:17.740  INFO 11160 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-30 15:15:17.798  INFO 11160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-30 15:15:17.803  INFO 11160 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 14.273 seconds (JVM running for 23.201)
+2021-09-30 15:15:21.999  INFO 11160 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 15:15:22.001  INFO 11160 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-30 15:15:22.021  INFO 11160 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-09-30 15:15:23.193  INFO 11160 --- [http-nio-8080-exec-2] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240763","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"33","returnDesc":"该订单异常"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:430ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:15:23.252  INFO 11160 --- [http-nio-8080-exec-2] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 8B20E09B93EFDE3CF419FD2AAB64A8E4
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240763",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=TS16814048",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "8B20E09B93EFDE3CF419FD2AAB64A8E4",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"-214","returnDescTc":"更新訂單信息失敗","returnDescSc":"更新订单信息失败","messageId":"8B20E09B93EFDE3CF419FD2AAB64A8E4","returnDescEn":"Failed to update order information"}
+ 调用开始时间: 2021-09-30 15:15:22
+ 调用结束时间: 2021-09-30 15:15:23
+ ------------------------------------------------
+2021-09-30 15:15:54.384  INFO 11160 --- [http-nio-8080-exec-5] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240765","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"ahk21093016240766","orderNum":"2109301016734864","returnDesc":"更改成功","checkCode":"HP16814051"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:344ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:15:54.525  INFO 11160 --- [http-nio-8080-exec-5] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 8B20E09B93EFDE3CF419FD2AAB64A8E4
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240765",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=TS16814048",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "8B20E09B93EFDE3CF419FD2AAB64A8E4",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 15:15:53
+ 调用结束时间: 2021-09-30 15:15:54
+ ------------------------------------------------
+2021-09-30 15:15:54.530 ERROR 11160 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: Cannot find implementation for com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:93)
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:76)
+	at com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper.<clinit>(AliPayHKResponseCervertMapper.java:22)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.qrCodeType(SaveAliPayHKOrderStrategy.java:95)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.generatePayParams(SaveAliPayHKOrderStrategy.java:83)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveAliPayHKOrder(PaymentWebOrderServiceImpl.java:57)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$25dcffab.saveAliPayHKOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveAliPayHKOrderWeb(PaymentController.java:260)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$9d53a849.saveAliPayHKOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 15:17:10.108  INFO 11160 --- [Thread-19] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 15:17:10.110  INFO 11160 --- [Thread-19] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-09-30 15:17:10.111  INFO 11160 --- [Thread-19] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-09-30 15:17:10.112  INFO 11160 --- [Thread-19] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-09-30 15:17:10.112  INFO 11160 --- [Thread-19] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 15:17:10.114  INFO 11160 --- [Thread-19] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-09-30 15:17:10.116  INFO 11160 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-30 15:17:10.117  INFO 11160 --- [Thread-19] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-09-30 15:17:10.194  INFO 11160 --- [Thread-19] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-30 15:17:51.822  INFO 11404 --- [main] com.stylefeng.guns.GunsApplication       : Starting GunsApplication on IT-MacBook-6921.local with PID 11404 (/Users/p6317/Documents/project/java/payment/api/src/payment-admin/target/classes started by p6317 in /Users/p6317/Documents/project/java/payment/api)
+2021-09-30 15:17:51.828  INFO 11404 --- [main] com.stylefeng.guns.GunsApplication       : The following profiles are active: uat
+2021-09-30 15:17:51.887  INFO 11404 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-30 15:17:53.492  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'gunsProperties' of type [com.stylefeng.guns.config.properties.GunsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.494  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restConfig' of type [com.stylefeng.guns.config.RestConfig$$EnhancerBySpringCGLIB$$7962e49c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.568  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplateBuilder' of type [org.springframework.boot.web.client.RestTemplateBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.772  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'clientHttpRequestFactory' of type [org.springframework.http.client.HttpComponentsClientHttpRequestFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.774  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'restTemplate' of type [com.stylefeng.guns.modular.payment.common.utils.RestTempleteAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.777  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultClientCache' of type [com.stylefeng.guns.modular.sso.service.DefaultClientCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.779  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.sso.plugin.config.SsoAutoConfiguration' of type [com.stylefeng.sso.plugin.config.SsoAutoConfiguration$$EnhancerBySpringCGLIB$$adc8afbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.783  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springContextHolder' of type [com.stylefeng.sso.plugin.util.SsoSpringContextHolder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.861  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.869  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'singleDataSourceConfig' of type [com.stylefeng.guns.config.datasource.SingleDataSourceConfig$$EnhancerBySpringCGLIB$$38345b78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.877  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.878  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataScopeInterceptor' of type [com.stylefeng.guns.core.datascope.DataScopeInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.880  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'optimisticLockerInterceptor' of type [com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.887  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.spring.boot.starter.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$553e167b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.891  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.stylefeng.guns.core.config.DefaultProperties' of type [com.stylefeng.guns.core.config.DefaultProperties$$EnhancerBySpringCGLIB$$66d1d331] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.896  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidProperties' of type [com.stylefeng.guns.core.config.properties.DruidProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:53.949  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:17:59.460  INFO 11404 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-30 15:18:00.432  WARN 11404 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMerchantMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 15:18:00.447  WARN 11404 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentMethodDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 15:18:00.549  WARN 11404 --- [main] c.b.mybatisplus.mapper.AutoSqlInjector   : class com.stylefeng.guns.modular.payment.pojo.po.PaymentVendorDO ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2021-09-30 15:18:00.611  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.615  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.616  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.619  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy103] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.623  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.626  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'menuMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.628  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authApiFactory' of type [com.stylefeng.guns.core.shiro.factory.AuthApiFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.628  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'webConfig' of type [com.stylefeng.guns.config.web.WebConfig$$EnhancerBySpringCGLIB$$b3d7819c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.689  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatPointcut' of type [org.springframework.aop.support.JdkRegexpMethodPointcut] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.695  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatInterceptor' of type [com.alibaba.druid.support.spring.stat.DruidStatInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.696  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidStatAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.719  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$fd621043] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:00.794  INFO 11404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79e781e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-30 15:18:01.358  INFO 11404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-30 15:18:01.384  INFO 11404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-30 15:18:01.384  INFO 11404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-09-30 15:18:01.497  INFO 11404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-30 15:18:01.497  INFO 11404 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9609 ms
+2021-09-30 15:18:01.980 ERROR 11404 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088621917774655 没有正确配置alihk cod回调解密参数
+2021-09-30 15:18:01.982 ERROR 11404 --- [main] c.s.g.m.payment.access.AliHkPayAccess    : 当前partnerid2088101122136241 没有正确配置alihk cod回调解密参数
+2021-09-30 15:18:03.610  INFO 11404 --- [main] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2021-09-30 15:18:03.802  INFO 11404 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-09-30 15:18:04.064  INFO 11404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-30 15:18:04.504  INFO 11404 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-09-30 15:18:04.527  INFO 11404 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-09-30 15:18:04.528  INFO 11404 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.1 created.
+2021-09-30 15:18:04.530  INFO 11404 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-09-30 15:18:04.531  INFO 11404 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-09-30 15:18:04.532  INFO 11404 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-09-30 15:18:04.532  INFO 11404 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.1
+2021-09-30 15:18:04.532  INFO 11404 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@540635e8
+2021-09-30 15:18:04.559  INFO 11404 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-09-30 15:18:04.647  INFO 11404 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-30 15:18:04.672  INFO 11404 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-30 15:18:04.715  INFO 11404 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-30 15:18:04.825  INFO 11404 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-09-30 15:18:04.825  INFO 11404 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-09-30 15:18:04.890  INFO 11404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-30 15:18:04.896  INFO 11404 --- [main] com.stylefeng.guns.GunsApplication       : Started GunsApplication in 13.963 seconds (JVM running for 22.594)
+2021-09-30 15:18:57.577  INFO 11404 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 15:18:57.579  INFO 11404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-30 15:18:57.599  INFO 11404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-09-30 15:18:58.657  INFO 11404 --- [http-nio-8080-exec-1] c.s.g.m.p.c.utils.RestTempleteAware      : 
+ 调用的url: http://10.0.17.97:8080/fee/modifyPaymentMethod
+ 调用的方法类型: POST
+ 入参数据: {"input":{"orderRef":"8861484321093016240767","updatePayMethod":"opl"},"pubInfo":{"enterUser":"MIAP"}}
+ 返回状态码: 200
+ 返回数据: {"result":{"returnCode":"0","orderRef":"ahk21093016240768","orderNum":"2109301016734865","returnDesc":"更改成功","checkCode":"MP16814052"},"respDesc":"调用成功!","timeLine":"BOSS3 time taken:336ms","respCode":"00000"}
+ 异常返回: null
+ ------------------------------------------------
+2021-09-30 15:18:58.786  INFO 11404 --- [http-nio-8080-exec-1] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/saveAliPayHKOrderWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: 8B20E09B93EFDE3CF419FD2AAB64A8E4
+ 入参数据类型: application/json
+ 入参数据: {    "orderNo": "8861484321093016240767",    "orderPrice": 0.01,    "productPrice": 0.01,    "handleFee": 0,    "merchantCode": "cmhkeshop",    "orderDesc": "CMHK",    "successUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=s&trade_no=TS16814048",    "merchantMethodId": "a3bf91f5-bdaf-4f9a-8e6c-d3b107599c47",    "currency": "HKD",    "lang": "zh_hk",    "messageId": "8B20E09B93EFDE3CF419FD2AAB64A8E4",    "nonceStr": "122334",    "failUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "cancelUrl": "http://10.0.28.120/tc/paidbill/paidbill-paystate.html?s=f",    "methodCode": "AlipayHK",    "productList": [],    "paymentType": "1",    "paymentMethod": "ALIPAYHK"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: 
+ 调用开始时间: 2021-09-30 15:18:57
+ 调用结束时间: 2021-09-30 15:18:58
+ ------------------------------------------------
+2021-09-30 15:18:58.804 ERROR 11404 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: Cannot find implementation for com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:93)
+	at org.mapstruct.factory.Mappers.getMapper(Mappers.java:76)
+	at com.stylefeng.guns.modular.payment.corvert.AliPayHKResponseCervertMapper.<clinit>(AliPayHKResponseCervertMapper.java:22)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.qrCodeType(SaveAliPayHKOrderStrategy.java:95)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.impl.SaveAliPayHKOrderStrategy.generatePayParams(SaveAliPayHKOrderStrategy.java:83)
+	at com.stylefeng.guns.modular.payment.strategy.saveorder.AbstractSaveOrderStrategy.saveOrder(AbstractSaveOrderStrategy.java:229)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl.saveAliPayHKOrder(PaymentWebOrderServiceImpl.java:57)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$FastClassBySpringCGLIB$$e778ffb5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.service.impl.PaymentWebOrderServiceImpl$$EnhancerBySpringCGLIB$$4148f886.saveAliPayHKOrder(<generated>)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController.saveAliPayHKOrderWeb(PaymentController.java:260)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$FastClassBySpringCGLIB$$6b9b04c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.stylefeng.guns.core.intercept.SessionHolderInterceptor.sessionKit(SessionHolderInterceptor.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.stylefeng.guns.modular.payment.controller.PaymentController$$EnhancerBySpringCGLIB$$3e905e57.saveAliPayHKOrderWeb(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.ResponseWrapperFilter.doFilter(ResponseWrapperFilter.java:24)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.modular.payment.filter.RequestWrapperFilter.doFilter(RequestWrapperFilter.java:29)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.stylefeng.guns.core.xss.XssFilter.doFilter(XssFilter.java:31)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:109)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-09-30 15:49:54.345  INFO 11404 --- [http-nio-8080-exec-4] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getOrderStatusWeb
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: null
+ 入参数据类型: application/json
+ 入参数据: {	"orderNo": "8861484321081815421139",    "merchantCode": "cmhkeshop"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","returnDescTc":"成功","returnDescSc":"成功","messageId":"4987c6da-27a3-4913-8fe7-0d5e5b54f132","returnDescEn":"SUCCESS","status":"PENDING"}
+ 调用开始时间: 2021-09-30 15:49:53
+ 调用结束时间: 2021-09-30 15:49:54
+ ------------------------------------------------
+2021-09-30 15:50:03.844  INFO 11404 --- [http-nio-8080-exec-5] c.s.g.m.p.s.i.InitialPaymentServiceImpl  : merchantId = 9b2285f0-04b3-42a6-8014-29a51584b45e
+2021-09-30 15:50:03.855  INFO 11404 --- [http-nio-8080-exec-5] c.s.g.m.p.s.i.InitialPaymentServiceImpl  : merchantMethodId = 075d1485-7aaa-430a-a83d-6e06bf6b6a5c
+2021-09-30 15:50:03.881  INFO 11404 --- [http-nio-8080-exec-5] c.s.g.m.p.controller.PaymentController   : Already expiry more than 15 mins
+2021-09-30 15:50:03.885  INFO 11404 --- [http-nio-8080-exec-5] c.s.g.m.p.i.LogHandlerInterceptor        : 
+ 调用的url: /payment/getCheckRequest
+ 调用接口的商户号: cmhkeshop
+ 消息ID messageId: B6DA2474E9B1EB23AF240B083278E25C
+ 入参数据类型: application/json
+ 入参数据: {	"merchantCode": "cmhkeshop",	"messageId": "B6DA2474E9B1EB23AF240B083278E25C",	"nonceStr": "1619494124595",	"orderNo": "8861484321081615419157",	"price": "1.00",	"sign": "a423a8292d1a88422e6edb99d5a272b0",	"terminalType": "WEB"}
+ 调用者ip: 0:0:0:0:0:0:0:1
+ 调用的方法类型: POST
+ 返回状态码: 200
+ 返回数据: {"returnCode":"0","orderNo":"8861484321081615419157","orderRef":"8861484321081615419157","returnDescTc":"成功","returnDescSc":"成功","messageId":"B6DA2474E9B1EB23AF240B083278E25C","returnDescEn":"SUCCESS","timeLeft":{"min":0,"second":0}}
+ 调用开始时间: 2021-09-30 15:50:03
+ 调用结束时间: 2021-09-30 15:50:03
+ ------------------------------------------------
+2021-09-30 18:01:33.756  INFO 11404 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 18:01:33.771  INFO 11404 --- [Thread-20] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-09-30 18:01:33.775  INFO 11404 --- [Thread-20] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-09-30 18:01:33.776  INFO 11404 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-09-30 18:01:33.776  INFO 11404 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-09-30 18:01:33.777  INFO 11404 --- [Thread-20] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-09-30 18:01:33.782  INFO 11404 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-30 18:01:33.787  INFO 11404 --- [Thread-20] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2021-09-30 18:01:34.819  INFO 11404 --- [Thread-20] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
