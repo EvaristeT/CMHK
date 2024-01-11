@@ -1,0 +1,32 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /sso
+
+spring:
+  application:
+    name: guns-sso-server
+  profiles:
+    active: local
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      prefix: /WEB-INF/view
+  datasource:
+    #url: jdbc:mysql://localhost:3306/olms?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    #username: root
+    #password: 123456
+    url: jdbc:mysql://192.168.5.92:3306/zs_payment_center?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: my@2019!
+  aop:
+    auto: true
+    proxy-target-class: true
+  main:
+    allow-bean-definition-overriding: true
+
+mybatis-plus:
+  typeAliasesPackage: com.stylefeng.sso.server.modular.entity
+
+log:
+  path: /var/log/olms/

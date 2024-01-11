@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "name": "beetl",
+      "type": "com.stylefeng.sso.server.config.properties.BeetlProperties",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "spring.sso",
+      "type": "com.stylefeng.sso.plugin.properties.SsoProperties",
+      "sourceType": "com.stylefeng.sso.server.config.WebConfig",
+      "sourceMethod": "public com.stylefeng.sso.plugin.properties.SsoProperties ssoProperties() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "beetl.delimiter-statement-end",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.delimiter-statement-start",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.resource-auto-check",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.resource-tagroot",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "beetl.resource-tagsuffix",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.server.config.properties.BeetlProperties"
+    },
+    {
+      "name": "spring.sso.client-to-server-url",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.plugin.properties.SsoProperties"
+    },
+    {
+      "name": "spring.sso.server-url",
+      "type": "java.lang.String",
+      "sourceType": "com.stylefeng.sso.plugin.properties.SsoProperties"
+    }
+  ],
+  "hints": []
+}
